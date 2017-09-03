@@ -1,0 +1,2060 @@
+
+<html>
+<head>
+<meta http-equiv="refresh" content="600">
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=gb2312">
+<meta name="keywords" content="深圳大学,深大,特区大学,Shenzhen University">
+<title>深圳大学内部网</title>
+<link href="/szu2014.ico" type="image/x-icon" rel="shortcut icon">
+<link rel="stylesheet" href="/szu.css" type="text/css">
+</head>
+<script language="javascript">
+function tips(vv)
+{
+	if(this.document.fsearch1.dayy.value=="3650#十年")
+		this.document.fsearch1.dayy.value="30#一个月";
+	if(vv=="fu")
+		this.open("userlist.asp","","toolbar=0,location=0,status=0,menubar=0,scrollbars=0,resizable=0,top=60,left=500,width=400,height=120");
+	else
+		this.document.fsearch1.keyword.focus();
+	if(vv=="post_time")
+	{
+		var d = new Date();
+		var m=d.getMonth()+1;
+		this.document.fsearch1.keyword.value=d.getFullYear()+"-"+m+"-"+d.getDay();
+		this.document.fsearch1.dayy.value="3650#十年";
+	}
+}
+
+function IsDate(str) {
+   if (!isdatevb(str)){
+    alert("请输入正确的日期格式：yyyy-mm-dd\n如 2013-6-28");
+    return false;
+    }
+    return true;
+  }
+</script>
+<script language="vbscript">
+function isdatevb(str)
+isdatevb=isdate(str)
+end function
+</script>
+<body class="tbhead tbcolor10" topmargin="0" leftmargin="0">
+<table border="0" width="100%" cellspacing="0" cellpadding="0" height="100%">
+<tr>
+<td align="center" valign="top" height="50"><script language="JavaScript">
+function getstr(str)
+{
+	var tag=str.indexOf("?");
+//////	if(tag>0 && escape(str).indexOf("%u")>0)
+	if(tag>0 && /.*[\u4e00-\u9fa5]+.*$/.test(str))
+		return str.substring(0,tag);
+	else
+		return str;
+}
+</script>
+
+<table border="0" cellspacing="0" cellpadding="0" width="980">
+<tr><td height=20 colspan="2">
+
+<table border="0" cellspacing="0" width=980 cellpadding="0">
+<tr>
+<td height=25></td>
+<td width="600" style="font-size: 9pt" align=right valign=bottom><b><a href="http://www.szu.edu.cn"><font color="#FFFFFF">深大官网</font></a>　<a href="/2014/en"><font color="#FFFFFF">English</font></a></b>&nbsp;</td>
+</tr>
+
+<tr height="155">
+<td class=tbcolor1><a href="/szu.asp" title="返回首页"><img border="0" src="/images/szu.png"></a><br>　</td>
+<td rowspan="2" background="/images/index/201706064.jpg" class="tbcolor1">
+</td>
+</tr>
+</table>
+
+</td>
+</tr>
+<tr><td height=1 colspan="2" bgcolor="#EEEEEE"></td></tr>
+<tr>
+<td colspan="2" class=tbcolor2>
+<table border="0" width="100%" cellspacing="0" cellpadding="0">
+<tr>
+<td class="fontcolor1" style="font-size: 9pt">
+
+　　<img border="0" src="/images/who.png">&nbsp;<a href="#" onclick="window.location.href='/manage/caslogin.asp?rurl='+getstr(window.location.href);return false;" class=fontcolor1>您未登录｜点击统一身份认证</a>
+
+</td>
+<td align="right" height="32" width="600" class=fontcolor1><b><a href="/szu.asp"><font color="#FFFFFF">首　页</font></a>
+　｜　
+<a href="/board/guide.asp"><font color="#FFFFFF">公文通</font></a>
+　｜　
+<a href="/view.asp?id=12"><font color="#FFFFFF">教师事务</font></a>
+　｜　
+<a href="/view.asp?id=13"><font color="#FFFFFF">学生事务</font></a>
+　｜　
+<a href="/tv"><font color="#FFFFFF">荔园文化</font></a>
+　｜　
+<a href="/nc"><font color="#FFFFFF">网上服务</font></a></b></td>
+<td width="30"></td>
+</tr>
+</table>
+</td>
+</tr>
+<tr><td height=1 colspan="2" bgcolor="#FFFFFF"></td></tr>
+</table></td>
+</tr>
+<tr>
+<td align="center" valign="top" height="300">
+<table border="0" cellspacing="0" cellpadding="0" width="980">
+<tr>
+<td align="center" width="25%" class=tbcolor3 height="30">
+<font size="3" color="#FFFFFF">校园公文通</font></td>
+<td align="right" width=75% class="tbcolor4 fontcolor3 9">
+<a href="/">首页</a><font color="#888888">＞</font>校园公文通&nbsp;&nbsp;&nbsp;&nbsp;</td>
+</tr>
+<tr>
+<td bgcolor="#E97235" height="1"></td>
+<td bgcolor="#E97235"></td>
+</tr>
+<tr>
+<td valign="top" align="center" height="450" colspan="2" class=tbcolor10>
+<table width="100%" border="0" cellpadding="0" height="100%">
+
+ <tr> 
+<td height="20">
+<table border="0" width="100%" cellspacing="2" cellpadding="0">
+<form name="fsearch1" method="post" action="">
+<tr>
+<td width="235">　◇阅览用户
+[<a href="../">退出系统</a>]</td>
+<td><a href="guide.asp" class=fontcolor3>【点击切换至分类视图】</a>
+<a href="mymails.asp" class=fontcolor3>&nbsp;&nbsp;*公文通引用代码</a></td>
+<td style="font-size: 9pt;border:1 dashed #666666;" align="center" width="350">
+<select name="dayy" style="font-size: 9pt" size="1">
+<option value="1#一天">一天</option>
+<option value="3#三天">三天</option>
+<option value="7#一周">一周</option>
+<option value="15#半个月">半个月</option>
+<option value="30#一个月" selected>一个月</option>
+<option value="90#三个月">三个月</option>
+<option value="182#半年">半年</option>
+<option value="365#一年">一年</option>
+<option value="730#两年">两年</option>
+<option value="1100#三年">三年</option>
+<option value="1830#五年">五年</option>
+<option value="3650#十年">--</option>
+</select>内，按<select name="search_type" style="font-size: 9pt" size="1" onChange="tips(this.value)">
+ <option value="title" title=标题>标题</option>
+ <option value="fu" title=发文单位>发文单位</option>
+ <option value="post_time" title=发文日期>发文日期</option>
+</select>关键字<input name="keyword" id=keyword size="10" value=""><input type=hidden name="keyword_user"><input type=text name=tnull size=1 disabled style="width:0px">
+<input type=submit value='搜索' name=searchb1 onclick="if(!this.form.keyword.value&&!(this.form.dayy.value=='1#一天'||this.form.dayy.value=='3#三天'||this.form.dayy.value=='7#一周'||this.form.dayy.value=='15#半个月'||this.form.dayy.value=='30#一个月')){alert('请输入关键字');return false;}else if(this.form.search_type.value=='post_time'){return IsDate(this.form.keyword.value);}"></td>
+<td width=10></td></tr></form> 
+
+</table>
+</td></tr>
+<tr><td align=center height=10>
+<table border="0" width="98%" cellpadding="0" cellspacing="10">
+<tr>
+<td style="font-size: 9pt">**全部信息(7天内)
+共166件</td>
+<td align="center" width="10%" height="25" bgcolor="#CDDADE" style="border: 1 solid #BBBBBB">
+<a href="?infotype=教务" title="教务信息、考试、选课、课程调整等信息">教学教务</a></td>
+<td align="center" width="10%" bgcolor="#CDDADE" style="border: 1 solid #BBBBBB">
+<a href="?infotype=学术" title="科研动态、学术报告、论坛讲座等学术交流活动">学术科研</a></td>
+<td align="center" width="10%" bgcolor="#CDDADE" style="border: 1 solid #BBBBBB">
+<a href="?infotype=行政" title="行政、人事、财务、外事及党委工作等办公事务">行政通知</a></td>
+<td align="center" width="10%" bgcolor="#CDDADE" style="border: 1 solid #BBBBBB">
+<a href="?infotype=学工" title="思想教育、奖贷助学、勤工助学、心理辅导、团委工作、学生会及社团等学生事务">学生工作</a></td>
+<td align="center" width="10%" bgcolor="#CDDADE" style="border: 1 solid #BBBBBB">
+<a href="?infotype=校园" title="文体活动、招聘就业、师生培训以及交通、水电、物管、网络等他综合信息">校园生活</a></td>
+<td align="center" width="12%" bgcolor="#EDFAFE" style="font-weight: bold;border: 1 solid #FF6600">
+<a href="./">全部信息</a></td>
+</tr>
+</table>
+</td> 
+</tr> 
+ 
+ <tr> 
+<td valign="top" align=center> 
+<table border="0" cellpadding=3 style="border-collapse: collapse" width="98%"> 
+<tr class=tbcolor13>
+ <td align="center" width="30"><b>序号</b></td> 
+ <td align="center" width="30"><b>类别</b></td> 
+ <td align="center" width="130"><b>发文单位</b></td> 
+ <td align="center"><b>标题</b></td> 
+ <td width="30" align="center"><b>附件</b></td> 
+<td align="center" width="70"><b>日期</b></td>
+</tr>
+<tr> 
+ <td colspan="6" height="1"></td> 
+</tr> 
+ 
+<tr > 
+ <td align="center">1</td> 
+ <td align="center" style="font-size: 9pt"><a href="?infotype=行政">行政</a></td> 
+ <td align="center" style="font-size: 9pt"><a href=# onclick="document.fsearch1.search_type.value='fu';document.fsearch1.keyword.value='党政办公室';document.fsearch1.dayy.value='30#一个月';document.fsearch1.searchb1.click();">党政办公室</a></td> 
+ <td><b><font color=red>|置顶|</font></b> 
+ <a target=_blank href="view.asp?id=345171" class=fontcolor3>·<b><font color=red>关于严格执行《深圳大学公务接待管理规定》的通知</font></b></a></td> 
+ <td align="center"><img border=0 src=../images/attach.gif></td> 
+ <td align="center" style="font-size: 9pt">2017-9-1</td> 
+
+</tr> 
+  
+<tr bgcolor=#FFFFFF> 
+ <td align="center">2</td> 
+ <td align="center" style="font-size: 9pt"><a href="?infotype=行政">行政</a></td> 
+ <td align="center" style="font-size: 9pt"><a href=# onclick="document.fsearch1.search_type.value='fu';document.fsearch1.keyword.value='计划财务部';document.fsearch1.dayy.value='30#一个月';document.fsearch1.searchb1.click();">计划财务部</a></td> 
+ <td><b><font color=red>|置顶|</font></b> 
+ <a target=_blank href="view.asp?id=345249" class=fontcolor3>·关于全面实施网上报销系统报账的通知</a></td> 
+ <td align="center"></td> 
+ <td align="center" style="font-size: 9pt">2017-9-1</td> 
+
+</tr> 
+  
+<tr > 
+ <td align="center">3</td> 
+ <td align="center" style="font-size: 9pt"><a href="?infotype=学工">学工</a></td> 
+ <td align="center" style="font-size: 9pt"><a href=# onclick="document.fsearch1.search_type.value='fu';document.fsearch1.keyword.value='计划财务部';document.fsearch1.dayy.value='30#一个月';document.fsearch1.searchb1.click();">计划财务部</a></td> 
+ <td><b><font color=red>|置顶|</font></b> 
+ <a target=_blank href="view.asp?id=345244" class=fontcolor3>·关于应退学杂费的通知</a></td> 
+ <td align="center"><img border=0 src=../images/attach.gif></td> 
+ <td align="center" style="font-size: 9pt">2017-9-1</td> 
+
+</tr> 
+  
+<tr bgcolor=#FFFFFF> 
+ <td align="center">4</td> 
+ <td align="center" style="font-size: 9pt"><a href="?infotype=学工">学工</a></td> 
+ <td align="center" style="font-size: 9pt"><a href=# onclick="document.fsearch1.search_type.value='fu';document.fsearch1.keyword.value='计划财务部';document.fsearch1.dayy.value='30#一个月';document.fsearch1.searchb1.click();">计划财务部</a></td> 
+ <td><b><font color=red>|置顶|</font></b> 
+ <a target=_blank href="view.asp?id=345242" class=fontcolor3>·关于催缴学费的通知</a></td> 
+ <td align="center"><img border=0 src=../images/attach.gif></td> 
+ <td align="center" style="font-size: 9pt">2017-9-1</td> 
+
+</tr> 
+  
+<tr > 
+ <td align="center">5</td> 
+ <td align="center" style="font-size: 9pt"><a href="?infotype=教务">教务</a></td> 
+ <td align="center" style="font-size: 9pt"><a href=# onclick="document.fsearch1.search_type.value='fu';document.fsearch1.keyword.value='教务部';document.fsearch1.dayy.value='30#一个月';document.fsearch1.searchb1.click();">教务部</a></td> 
+ <td><b><font color=red>|置顶|</font></b> 
+ <a target=_blank href="view.asp?id=345198" class=fontcolor3>·<b><font color=red>关于2018届科技创新竞赛获奖本科毕业生免试攻读硕士学位研究生资格及资格评定绩点上浮申请的通知</font></b></a></td> 
+ <td align="center"><img border=0 src=../images/attach.gif></td> 
+ <td align="center" style="font-size: 9pt">2017-9-1</td> 
+
+</tr> 
+  
+<tr bgcolor=#FFFFFF> 
+ <td align="center">6</td> 
+ <td align="center" style="font-size: 9pt"><a href="?infotype=行政">行政</a></td> 
+ <td align="center" style="font-size: 9pt"><a href=# onclick="document.fsearch1.search_type.value='fu';document.fsearch1.keyword.value='职改办';document.fsearch1.dayy.value='30#一个月';document.fsearch1.searchb1.click();">职改办</a></td> 
+ <td><b><font color=red>|置顶|</font></b> 
+ <a target=_blank href="view.asp?id=345192" class=fontcolor3>·<b><font color=black>关于开展深圳大学2017年度专业技术职务评聘工作的通知</font></b></a></td> 
+ <td align="center"><img border=0 src=../images/attach.gif></td> 
+ <td align="center" style="font-size: 9pt">2017-8-31</td> 
+
+</tr> 
+  
+<tr > 
+ <td align="center">7</td> 
+ <td align="center" style="font-size: 9pt"><a href="?infotype=行政">行政</a></td> 
+ <td align="center" style="font-size: 9pt"><a href=# onclick="document.fsearch1.search_type.value='fu';document.fsearch1.keyword.value='电话通讯室';document.fsearch1.dayy.value='30#一个月';document.fsearch1.searchb1.click();">电话通讯室</a></td> 
+ <td><b><font color=red>|置顶|</font></b> 
+ <a target=_blank href="view.asp?id=345172" class=fontcolor3>·<b>电话通讯室服务信息</b></a></td> 
+ <td align="center"></td> 
+ <td align="center" style="font-size: 9pt">2017-8-31</td> 
+
+</tr> 
+  
+<tr bgcolor=#FFFFFF> 
+ <td align="center">8</td> 
+ <td align="center" style="font-size: 9pt"><a href="?infotype=行政">行政</a></td> 
+ <td align="center" style="font-size: 9pt"><a href=# onclick="document.fsearch1.search_type.value='fu';document.fsearch1.keyword.value='人力资源部';document.fsearch1.dayy.value='30#一个月';document.fsearch1.searchb1.click();">人力资源部</a></td> 
+ <td><b><font color=red>|置顶|</font></b> 
+ <a target=_blank href="view.asp?id=345158" class=fontcolor3>·<b>关于开展高层次人才信息采集工作的通知</b></a></td> 
+ <td align="center"><img border=0 src=../images/attach.gif></td> 
+ <td align="center" style="font-size: 9pt">2017-8-31</td> 
+
+</tr> 
+  
+<tr > 
+ <td align="center">9</td> 
+ <td align="center" style="font-size: 9pt"><a href="?infotype=学术">学术</a></td> 
+ <td align="center" style="font-size: 9pt"><a href=# onclick="document.fsearch1.search_type.value='fu';document.fsearch1.keyword.value='科学技术部';document.fsearch1.dayy.value='30#一个月';document.fsearch1.searchb1.click();">科学技术部</a></td> 
+ <td><b><font color=red>|置顶|</font></b> 
+ <a target=_blank href="view.asp?id=344815" class=fontcolor3>·<b>关于开展重点实验室、工程中心、公共技术服务平台信息采集工作的通知(截止时间推迟）</b></a></td> 
+ <td align="center"><img border=0 src=../images/attach.gif></td> 
+ <td align="center" style="font-size: 9pt">2017-8-31</td> 
+
+</tr> 
+  
+<tr bgcolor=#FFFFFF> 
+ <td align="center">10</td> 
+ <td align="center" style="font-size: 9pt"><a href="?infotype=学术">学术</a></td> 
+ <td align="center" style="font-size: 9pt"><a href=# onclick="document.fsearch1.search_type.value='fu';document.fsearch1.keyword.value='科学技术部';document.fsearch1.dayy.value='30#一个月';document.fsearch1.searchb1.click();">科学技术部</a></td> 
+ <td><b><font color=red>|置顶|</font></b> 
+ <a target=_blank href="view.asp?id=344877" class=fontcolor3>·<b>关于征集深圳市诺贝尔奖科学家实验室项目的通知</b></a></td> 
+ <td align="center"><img border=0 src=../images/attach.gif></td> 
+ <td align="center" style="font-size: 9pt">2017-8-31</td> 
+
+</tr> 
+  
+<tr > 
+ <td align="center">11</td> 
+ <td align="center" style="font-size: 9pt"><a href="?infotype=教务">教务</a></td> 
+ <td align="center" style="font-size: 9pt"><a href=# onclick="document.fsearch1.search_type.value='fu';document.fsearch1.keyword.value='教务部';document.fsearch1.dayy.value='30#一个月';document.fsearch1.searchb1.click();">教务部</a></td> 
+ <td><b><font color=red>|置顶|</font></b> 
+ <a target=_blank href="view.asp?id=344229" class=fontcolor3>·<b><font color=red>关于开展2017年度广东省高等教育教学改革项目推荐工作的通知（重发）</font></b></a></td> 
+ <td align="center"><img border=0 src=../images/attach.gif></td> 
+ <td align="center" style="font-size: 9pt">2017-8-31</td> 
+
+</tr> 
+  
+<tr bgcolor=#FFFFFF> 
+ <td align="center">12</td> 
+ <td align="center" style="font-size: 9pt"><a href="?infotype=教务">教务</a></td> 
+ <td align="center" style="font-size: 9pt"><a href=# onclick="document.fsearch1.search_type.value='fu';document.fsearch1.keyword.value='教务部';document.fsearch1.dayy.value='30#一个月';document.fsearch1.searchb1.click();">教务部</a></td> 
+ <td><b><font color=red>|置顶|</font></b> 
+ <a target=_blank href="view.asp?id=344228" class=fontcolor3>·<b><font color=red>关于开展2017年度校级“质量工程”建设项目申报和省级“质量工程”建设项目推荐工作的通知（重发）</font></b></a></td> 
+ <td align="center"><img border=0 src=../images/attach.gif></td> 
+ <td align="center" style="font-size: 9pt">2017-8-31</td> 
+
+</tr> 
+  
+<tr > 
+ <td align="center">13</td> 
+ <td align="center" style="font-size: 9pt"><a href="?infotype=教务">教务</a></td> 
+ <td align="center" style="font-size: 9pt"><a href=# onclick="document.fsearch1.search_type.value='fu';document.fsearch1.keyword.value='教务部';document.fsearch1.dayy.value='30#一个月';document.fsearch1.searchb1.click();">教务部</a></td> 
+ <td><b><font color=red>|置顶|</font></b> 
+ <a target=_blank href="view.asp?id=345054" class=fontcolor3>·<b><font color=red>关于做好2016-2017学年本科生参加各级各类竞赛获奖情况统计工作的通知</font></b></a></td> 
+ <td align="center"><img border=0 src=../images/attach.gif></td> 
+ <td align="center" style="font-size: 9pt">2017-8-30</td> 
+
+</tr> 
+  
+<tr bgcolor=#FFFFFF> 
+ <td align="center">14</td> 
+ <td align="center" style="font-size: 9pt"><a href="?infotype=学工">学工</a></td> 
+ <td align="center" style="font-size: 9pt"><a href=# onclick="document.fsearch1.search_type.value='fu';document.fsearch1.keyword.value='西丽校区管委会';document.fsearch1.dayy.value='30#一个月';document.fsearch1.searchb1.click();">西丽校区管委会</a></td> 
+ <td> 
+ <a target=_blank href="view.asp?id=345272" class=fontcolor3>·<b>关于西丽校区学生宿舍限电管理的通知</b></a></td> 
+ <td align="center"></td> 
+ <td align="center" style="font-size: 9pt">2017-9-3</td> 
+
+</tr> 
+  
+<tr > 
+ <td align="center">15</td> 
+ <td align="center" style="font-size: 9pt"><a href="?infotype=校园">校园</a></td> 
+ <td align="center" style="font-size: 9pt"><a href=# onclick="document.fsearch1.search_type.value='fu';document.fsearch1.keyword.value='中航物业';document.fsearch1.dayy.value='30#一个月';document.fsearch1.searchb1.click();">中航物业</a></td> 
+ <td> 
+ <a target=_blank href="view.asp?id=345271" class=fontcolor3>·<b><font color=black>温馨提示</font></b></a></td> 
+ <td align="center"></td> 
+ <td align="center" style="font-size: 9pt">2017-9-3</td> 
+
+</tr> 
+  
+<tr bgcolor=#FFFFFF> 
+ <td align="center">16</td> 
+ <td align="center" style="font-size: 9pt"><a href="?infotype=教务">教务</a></td> 
+ <td align="center" style="font-size: 9pt"><a href=# onclick="document.fsearch1.search_type.value='fu';document.fsearch1.keyword.value='印度研究中心';document.fsearch1.dayy.value='30#一个月';document.fsearch1.searchb1.click();">印度研究中心</a></td> 
+ <td> 
+ <a target=_blank href="view.asp?id=334230" class=fontcolor3>·<font color=black>印度文化系列课程二：东方文化纵览</font></a></td> 
+ <td align="center"></td> 
+ <td align="center" style="font-size: 9pt">2017-9-2</td> 
+
+</tr> 
+  
+<tr > 
+ <td align="center">17</td> 
+ <td align="center" style="font-size: 9pt"><a href="?infotype=教务">教务</a></td> 
+ <td align="center" style="font-size: 9pt"><a href=# onclick="document.fsearch1.search_type.value='fu';document.fsearch1.keyword.value='印度研究中心';document.fsearch1.dayy.value='30#一个月';document.fsearch1.searchb1.click();">印度研究中心</a></td> 
+ <td> 
+ <a target=_blank href="view.asp?id=334233" class=fontcolor3>·<font color=black>印度文化系列课程三：《摩奴法论》与印度社会</font></a></td> 
+ <td align="center"></td> 
+ <td align="center" style="font-size: 9pt">2017-9-2</td> 
+
+</tr> 
+  
+<tr bgcolor=#FFFFFF> 
+ <td align="center">18</td> 
+ <td align="center" style="font-size: 9pt"><a href="?infotype=教务">教务</a></td> 
+ <td align="center" style="font-size: 9pt"><a href=# onclick="document.fsearch1.search_type.value='fu';document.fsearch1.keyword.value='印度研究中心';document.fsearch1.dayy.value='30#一个月';document.fsearch1.searchb1.click();">印度研究中心</a></td> 
+ <td> 
+ <a target=_blank href="view.asp?id=334228" class=fontcolor3>·<font color=black>印度文化系列课程一：印度视觉艺术</font></a></td> 
+ <td align="center"></td> 
+ <td align="center" style="font-size: 9pt">2017-9-2</td> 
+
+</tr> 
+  
+<tr > 
+ <td align="center">19</td> 
+ <td align="center" style="font-size: 9pt"><a href="?infotype=行政">行政</a></td> 
+ <td align="center" style="font-size: 9pt"><a href=# onclick="document.fsearch1.search_type.value='fu';document.fsearch1.keyword.value='人力资源部';document.fsearch1.dayy.value='30#一个月';document.fsearch1.searchb1.click();">人力资源部</a></td> 
+ <td> 
+ <a target=_blank href="view.asp?id=345262" class=fontcolor3>·<b><font color=black>（附件四表格更新）关于深圳市高层次人才奖励补贴申报有关事项的通知</font></b></a></td> 
+ <td align="center"><img border=0 src=../images/attach.gif></td> 
+ <td align="center" style="font-size: 9pt">2017-9-2</td> 
+
+</tr> 
+  
+<tr bgcolor=#FFFFFF> 
+ <td align="center">20</td> 
+ <td align="center" style="font-size: 9pt"><a href="?infotype=行政">行政</a></td> 
+ <td align="center" style="font-size: 9pt"><a href=# onclick="document.fsearch1.search_type.value='fu';document.fsearch1.keyword.value='档案馆';document.fsearch1.dayy.value='30#一个月';document.fsearch1.searchb1.click();">档案馆</a></td> 
+ <td> 
+ <a target=_blank href="view.asp?id=345268" class=fontcolor3>·<b>档案馆完成搬迁并开始试运营</b></a></td> 
+ <td align="center"></td> 
+ <td align="center" style="font-size: 9pt">2017-9-2</td> 
+
+</tr> 
+  
+<tr > 
+ <td align="center">21</td> 
+ <td align="center" style="font-size: 9pt"><a href="?infotype=教务">教务</a></td> 
+ <td align="center" style="font-size: 9pt"><a href=# onclick="document.fsearch1.search_type.value='fu';document.fsearch1.keyword.value='英语口语测试中心';document.fsearch1.dayy.value='30#一个月';document.fsearch1.searchb1.click();">英语口语测试中心</a></td> 
+ <td> 
+ <a target=_blank href="view.asp?id=345267" class=fontcolor3>·<b><font color=black>2017年推免生英语口语测试补考通知</font></b></a></td> 
+ <td align="center"><img border=0 src=../images/attach.gif></td> 
+ <td align="center" style="font-size: 9pt">2017-9-2</td> 
+
+</tr> 
+  
+<tr bgcolor=#FFFFFF> 
+ <td align="center">22</td> 
+ <td align="center" style="font-size: 9pt"><a href="?infotype=学术">学术</a></td> 
+ <td align="center" style="font-size: 9pt"><a href=# onclick="document.fsearch1.search_type.value='fu';document.fsearch1.keyword.value='图书馆';document.fsearch1.dayy.value='30#一个月';document.fsearch1.searchb1.click();">图书馆</a></td> 
+ <td> 
+ <a target=_blank href="view.asp?id=345266" class=fontcolor3>·Taylor & Francis 2017年秋季网络课程</a></td> 
+ <td align="center"></td> 
+ <td align="center" style="font-size: 9pt">2017-9-1</td> 
+
+</tr> 
+  
+<tr > 
+ <td align="center">23</td> 
+ <td align="center" style="font-size: 9pt"><a href="?infotype=教务">教务</a></td> 
+ <td align="center" style="font-size: 9pt"><a href=# onclick="document.fsearch1.search_type.value='fu';document.fsearch1.keyword.value='教务部';document.fsearch1.dayy.value='30#一个月';document.fsearch1.searchb1.click();">教务部</a></td> 
+ <td> 
+ <a target=_blank href="view.asp?id=345261" class=fontcolor3>·<b><font color=black>关于评选2016-2017学年本科教学单项奖的通知</font></b></a></td> 
+ <td align="center"><img border=0 src=../images/attach.gif></td> 
+ <td align="center" style="font-size: 9pt">2017-9-1</td> 
+
+</tr> 
+  
+<tr bgcolor=#FFFFFF> 
+ <td align="center">24</td> 
+ <td align="center" style="font-size: 9pt"><a href="?infotype=教务">教务</a></td> 
+ <td align="center" style="font-size: 9pt"><a href=# onclick="document.fsearch1.search_type.value='fu';document.fsearch1.keyword.value='教务部';document.fsearch1.dayy.value='30#一个月';document.fsearch1.searchb1.click();">教务部</a></td> 
+ <td> 
+ <a target=_blank href="view.asp?id=345260" class=fontcolor3>·<b><font color=black>关于申报2017年“广东特支计划"教学名师的通知</font></b></a></td> 
+ <td align="center"><img border=0 src=../images/attach.gif></td> 
+ <td align="center" style="font-size: 9pt">2017-9-1</td> 
+
+</tr> 
+  
+<tr > 
+ <td align="center">25</td> 
+ <td align="center" style="font-size: 9pt"><a href="?infotype=学术">学术</a></td> 
+ <td align="center" style="font-size: 9pt"><a href=# onclick="document.fsearch1.search_type.value='fu';document.fsearch1.keyword.value='物理与能源学院';document.fsearch1.dayy.value='30#一个月';document.fsearch1.searchb1.click();">物理与能源学院</a></td> 
+ <td> 
+ <a target=_blank href="view.asp?id=345259" class=fontcolor3>·物理与能源学院2017年学术报告（二十八）： FCC高熵合金的设计及发展趋势</a></td> 
+ <td align="center"></td> 
+ <td align="center" style="font-size: 9pt">2017-9-1</td> 
+
+</tr> 
+  
+<tr bgcolor=#FFFFFF> 
+ <td align="center">26</td> 
+ <td align="center" style="font-size: 9pt"><a href="?infotype=学术">学术</a></td> 
+ <td align="center" style="font-size: 9pt"><a href=# onclick="document.fsearch1.search_type.value='fu';document.fsearch1.keyword.value='机电与控制工程学院';document.fsearch1.dayy.value='30#一个月';document.fsearch1.searchb1.click();">机电与控制工程学院</a></td> 
+ <td> 
+ <a target=_blank href="view.asp?id=345257" class=fontcolor3>·喜讯：RoboMaster 2017全国大学生机器人大赛总决赛我校代表队再创佳绩</a></td> 
+ <td align="center"></td> 
+ <td align="center" style="font-size: 9pt">2017-9-1</td> 
+
+</tr> 
+  
+<tr > 
+ <td align="center">27</td> 
+ <td align="center" style="font-size: 9pt"><a href="?infotype=教务">教务</a></td> 
+ <td align="center" style="font-size: 9pt"><a href=# onclick="document.fsearch1.search_type.value='fu';document.fsearch1.keyword.value='机电与控制工程学院';document.fsearch1.dayy.value='30#一个月';document.fsearch1.searchb1.click();">机电与控制工程学院</a></td> 
+ <td> 
+ <a target=_blank href="view.asp?id=345258" class=fontcolor3>·<b>获奖喜讯： 全国大学生物联网设计竞赛-机电学院学生喜获佳绩</b></a></td> 
+ <td align="center"></td> 
+ <td align="center" style="font-size: 9pt">2017-9-1</td> 
+
+</tr> 
+  
+<tr bgcolor=#FFFFFF> 
+ <td align="center">28</td> 
+ <td align="center" style="font-size: 9pt"><a href="?infotype=教务">教务</a></td> 
+ <td align="center" style="font-size: 9pt"><a href=# onclick="document.fsearch1.search_type.value='fu';document.fsearch1.keyword.value='研究生院';document.fsearch1.dayy.value='30#一个月';document.fsearch1.searchb1.click();">研究生院</a></td> 
+ <td> 
+ <a target=_blank href="view.asp?id=344983" class=fontcolor3>·2017—2018第一学期研究生上课时间等相关工作的温馨提示</a></td> 
+ <td align="center"></td> 
+ <td align="center" style="font-size: 9pt">2017-9-1</td> 
+
+</tr> 
+  
+<tr > 
+ <td align="center">29</td> 
+ <td align="center" style="font-size: 9pt"><a href="?infotype=教务">教务</a></td> 
+ <td align="center" style="font-size: 9pt"><a href=# onclick="document.fsearch1.search_type.value='fu';document.fsearch1.keyword.value='印度研究中心';document.fsearch1.dayy.value='30#一个月';document.fsearch1.searchb1.click();">印度研究中心</a></td> 
+ <td> 
+ <a target=_blank href="view.asp?id=345254" class=fontcolor3>·<b><font color=black>聚徒教学项目招募学生</font></b></a></td> 
+ <td align="center"><img border=0 src=../images/attach.gif></td> 
+ <td align="center" style="font-size: 9pt">2017-9-1</td> 
+
+</tr> 
+  
+<tr bgcolor=#FFFFFF> 
+ <td align="center">30</td> 
+ <td align="center" style="font-size: 9pt"><a href="?infotype=行政">行政</a></td> 
+ <td align="center" style="font-size: 9pt"><a href=# onclick="document.fsearch1.search_type.value='fu';document.fsearch1.keyword.value='计划财务部';document.fsearch1.dayy.value='30#一个月';document.fsearch1.searchb1.click();">计划财务部</a></td> 
+ <td> 
+ <a target=_blank href="view.asp?id=345256" class=fontcolor3>·关于提醒暂付款还款冲帐的通知</a></td> 
+ <td align="center"></td> 
+ <td align="center" style="font-size: 9pt">2017-9-1</td> 
+
+</tr> 
+  
+<tr > 
+ <td align="center">31</td> 
+ <td align="center" style="font-size: 9pt"><a href="?infotype=教务">教务</a></td> 
+ <td align="center" style="font-size: 9pt"><a href=# onclick="document.fsearch1.search_type.value='fu';document.fsearch1.keyword.value='研究生院';document.fsearch1.dayy.value='30#一个月';document.fsearch1.searchb1.click();">研究生院</a></td> 
+ <td> 
+ <a target=_blank href="view.asp?id=345251" class=fontcolor3>·研究生院召开教务系统培训会</a></td> 
+ <td align="center"></td> 
+ <td align="center" style="font-size: 9pt">2017-9-1</td> 
+
+</tr> 
+  
+<tr bgcolor=#FFFFFF> 
+ <td align="center">32</td> 
+ <td align="center" style="font-size: 9pt"><a href="?infotype=校园">校园</a></td> 
+ <td align="center" style="font-size: 9pt"><a href=# onclick="document.fsearch1.search_type.value='fu';document.fsearch1.keyword.value='图书馆';document.fsearch1.dayy.value='30#一个月';document.fsearch1.searchb1.click();">图书馆</a></td> 
+ <td> 
+ <a target=_blank href="view.asp?id=345250" class=fontcolor3>·关于图书馆南馆启用计算机管理座位的通知</a></td> 
+ <td align="center"></td> 
+ <td align="center" style="font-size: 9pt">2017-9-1</td> 
+
+</tr> 
+  
+<tr > 
+ <td align="center">33</td> 
+ <td align="center" style="font-size: 9pt"><a href="?infotype=校园">校园</a></td> 
+ <td align="center" style="font-size: 9pt"><a href=# onclick="document.fsearch1.search_type.value='fu';document.fsearch1.keyword.value='后勤部';document.fsearch1.dayy.value='30#一个月';document.fsearch1.searchb1.click();">后勤部</a></td> 
+ <td> 
+ <a target=_blank href="view.asp?id=345248" class=fontcolor3>·后勤部关于征集校园休闲桌椅布局定位及桌椅样式方案的通知</a></td> 
+ <td align="center"></td> 
+ <td align="center" style="font-size: 9pt">2017-9-1</td> 
+
+</tr> 
+  
+<tr bgcolor=#FFFFFF> 
+ <td align="center">34</td> 
+ <td align="center" style="font-size: 9pt"><a href="?infotype=校园">校园</a></td> 
+ <td align="center" style="font-size: 9pt"><a href=# onclick="document.fsearch1.search_type.value='fu';document.fsearch1.keyword.value='人文学院';document.fsearch1.dayy.value='30#一个月';document.fsearch1.searchb1.click();">人文学院</a></td> 
+ <td> 
+ <a target=_blank href="view.asp?id=345247" class=fontcolor3>·<b>人文学院实验室招聘勤工助学助理</b></a></td> 
+ <td align="center"></td> 
+ <td align="center" style="font-size: 9pt">2017-9-1</td> 
+
+</tr> 
+  
+<tr > 
+ <td align="center">35</td> 
+ <td align="center" style="font-size: 9pt"><a href="?infotype=教务">教务</a></td> 
+ <td align="center" style="font-size: 9pt"><a href=# onclick="document.fsearch1.search_type.value='fu';document.fsearch1.keyword.value='机电与控制工程学院';document.fsearch1.dayy.value='30#一个月';document.fsearch1.searchb1.click();">机电与控制工程学院</a></td> 
+ <td> 
+ <a target=_blank href="view.asp?id=344702" class=fontcolor3>·机电学院2017-2018第一学期学院自行安排实践课程的通知</a></td> 
+ <td align="center"></td> 
+ <td align="center" style="font-size: 9pt">2017-9-1</td> 
+
+</tr> 
+  
+<tr bgcolor=#FFFFFF> 
+ <td align="center">36</td> 
+ <td align="center" style="font-size: 9pt"><a href="?infotype=校园">校园</a></td> 
+ <td align="center" style="font-size: 9pt"><a href=# onclick="document.fsearch1.search_type.value='fu';document.fsearch1.keyword.value='管理学院';document.fsearch1.dayy.value='30#一个月';document.fsearch1.searchb1.click();">管理学院</a></td> 
+ <td> 
+ <a target=_blank href="view.asp?id=345230" class=fontcolor3>·<b><font color=black>深圳大学2017级MBA、MPA开学典礼暨MBA大讲堂（第67讲）&#8226;MPA风云论坛（第38期）顺利举行</font></b></a></td> 
+ <td align="center"></td> 
+ <td align="center" style="font-size: 9pt">2017-9-1</td> 
+
+</tr> 
+  
+<tr > 
+ <td align="center">37</td> 
+ <td align="center" style="font-size: 9pt"><a href="?infotype=校园">校园</a></td> 
+ <td align="center" style="font-size: 9pt"><a href=# onclick="document.fsearch1.search_type.value='fu';document.fsearch1.keyword.value='计划财务部';document.fsearch1.dayy.value='30#一个月';document.fsearch1.searchb1.click();">计划财务部</a></td> 
+ <td> 
+ <a target=_blank href="view.asp?id=345245" class=fontcolor3>·中国银行深大支行开学季教师二重礼</a></td> 
+ <td align="center"></td> 
+ <td align="center" style="font-size: 9pt">2017-9-1</td> 
+
+</tr> 
+  
+<tr bgcolor=#FFFFFF> 
+ <td align="center">38</td> 
+ <td align="center" style="font-size: 9pt"><a href="?infotype=学术">学术</a></td> 
+ <td align="center" style="font-size: 9pt"><a href=# onclick="document.fsearch1.search_type.value='fu';document.fsearch1.keyword.value='机电与控制工程学院';document.fsearch1.dayy.value='30#一个月';document.fsearch1.searchb1.click();">机电与控制工程学院</a></td> 
+ <td> 
+ <a target=_blank href="view.asp?id=345246" class=fontcolor3>·学术讲座：微细、镜面和数控磨削技术及其光学、生物结构表面应用</a></td> 
+ <td align="center"></td> 
+ <td align="center" style="font-size: 9pt">2017-9-1</td> 
+
+</tr> 
+  
+<tr > 
+ <td align="center">39</td> 
+ <td align="center" style="font-size: 9pt"><a href="?infotype=教务">教务</a></td> 
+ <td align="center" style="font-size: 9pt"><a href=# onclick="document.fsearch1.search_type.value='fu';document.fsearch1.keyword.value='研究生院';document.fsearch1.dayy.value='30#一个月';document.fsearch1.searchb1.click();">研究生院</a></td> 
+ <td> 
+ <a target=_blank href="view.asp?id=345243" class=fontcolor3>·<b><font color=black>2017-2018第一学期专业学位研究生选课指引</font></b></a></td> 
+ <td align="center"><img border=0 src=../images/attach.gif></td> 
+ <td align="center" style="font-size: 9pt">2017-9-1</td> 
+
+</tr> 
+  
+<tr bgcolor=#FFFFFF> 
+ <td align="center">40</td> 
+ <td align="center" style="font-size: 9pt"><a href="?infotype=教务">教务</a></td> 
+ <td align="center" style="font-size: 9pt"><a href=# onclick="document.fsearch1.search_type.value='fu';document.fsearch1.keyword.value='人文学院';document.fsearch1.dayy.value='30#一个月';document.fsearch1.searchb1.click();">人文学院</a></td> 
+ <td> 
+ <a target=_blank href="view.asp?id=345231" class=fontcolor3>·关于文史哲通论课程的替换方案</a></td> 
+ <td align="center"></td> 
+ <td align="center" style="font-size: 9pt">2017-9-1</td> 
+
+</tr> 
+  
+<tr > 
+ <td align="center">41</td> 
+ <td align="center" style="font-size: 9pt"><a href="?infotype=学术">学术</a></td> 
+ <td align="center" style="font-size: 9pt"><a href=# onclick="document.fsearch1.search_type.value='fu';document.fsearch1.keyword.value='医学部(院)';document.fsearch1.dayy.value='30#一个月';document.fsearch1.searchb1.click();">医学部(院)</a></td> 
+ <td> 
+ <a target=_blank href="view.asp?id=345229" class=fontcolor3>·【医学部学术讲座】——Dynamic Molecular Shell of Nanomaterials for Ultr</a></td> 
+ <td align="center"></td> 
+ <td align="center" style="font-size: 9pt">2017-9-1</td> 
+
+</tr> 
+  
+<tr bgcolor=#FFFFFF> 
+ <td align="center">42</td> 
+ <td align="center" style="font-size: 9pt"><a href="?infotype=教务">教务</a></td> 
+ <td align="center" style="font-size: 9pt"><a href=# onclick="document.fsearch1.search_type.value='fu';document.fsearch1.keyword.value='化学与环境工程学院';document.fsearch1.dayy.value='30#一个月';document.fsearch1.searchb1.click();">化学与环境工程学院</a></td> 
+ <td> 
+ <a target=_blank href="view.asp?id=345228" class=fontcolor3>·<b>化学与环境工程2017-2018学年第一学期本科“创新研究短课”学生选课的通知</b></a></td> 
+ <td align="center"></td> 
+ <td align="center" style="font-size: 9pt">2017-9-1</td> 
+
+</tr> 
+  
+<tr > 
+ <td align="center">43</td> 
+ <td align="center" style="font-size: 9pt"><a href="?infotype=教务">教务</a></td> 
+ <td align="center" style="font-size: 9pt"><a href=# onclick="document.fsearch1.search_type.value='fu';document.fsearch1.keyword.value='电子科学与技术学院';document.fsearch1.dayy.value='30#一个月';document.fsearch1.searchb1.click();">电子科学与技术学院</a></td> 
+ <td> 
+ <a target=_blank href="view.asp?id=345227" class=fontcolor3>·“Python程序设计入门”专题研讨短课开班啦</a></td> 
+ <td align="center"></td> 
+ <td align="center" style="font-size: 9pt">2017-9-1</td> 
+
+</tr> 
+  
+<tr bgcolor=#FFFFFF> 
+ <td align="center">44</td> 
+ <td align="center" style="font-size: 9pt"><a href="?infotype=行政">行政</a></td> 
+ <td align="center" style="font-size: 9pt"><a href=# onclick="document.fsearch1.search_type.value='fu';document.fsearch1.keyword.value='国际交流与合作部';document.fsearch1.dayy.value='30#一个月';document.fsearch1.searchb1.click();">国际交流与合作部</a></td> 
+ <td> 
+ <a target=_blank href="view.asp?id=345226" class=fontcolor3>·<b><font color=black>国际交流与合作部2017-2018学年第一学期勤工助学岗位招聘</font></b></a></td> 
+ <td align="center"></td> 
+ <td align="center" style="font-size: 9pt">2017-9-1</td> 
+
+</tr> 
+  
+<tr > 
+ <td align="center">45</td> 
+ <td align="center" style="font-size: 9pt"><a href="?infotype=行政">行政</a></td> 
+ <td align="center" style="font-size: 9pt"><a href=# onclick="document.fsearch1.search_type.value='fu';document.fsearch1.keyword.value='维修服务中心';document.fsearch1.dayy.value='30#一个月';document.fsearch1.searchb1.click();">维修服务中心</a></td> 
+ <td> 
+ <a target=_blank href="view.asp?id=345225" class=fontcolor3>·招聘启事</a></td> 
+ <td align="center"></td> 
+ <td align="center" style="font-size: 9pt">2017-9-1</td> 
+
+</tr> 
+  
+<tr bgcolor=#FFFFFF> 
+ <td align="center">46</td> 
+ <td align="center" style="font-size: 9pt"><a href="?infotype=学术">学术</a></td> 
+ <td align="center" style="font-size: 9pt"><a href=# onclick="document.fsearch1.search_type.value='fu';document.fsearch1.keyword.value='数学与统计学院';document.fsearch1.dayy.value='30#一个月';document.fsearch1.searchb1.click();">数学与统计学院</a></td> 
+ <td> 
+ <a target=_blank href="view.asp?id=345223" class=fontcolor3>·学术报告二十：Analysis of the singularity for Navier-Stokes equations</a></td> 
+ <td align="center"></td> 
+ <td align="center" style="font-size: 9pt">2017-9-1</td> 
+
+</tr> 
+  
+<tr > 
+ <td align="center">47</td> 
+ <td align="center" style="font-size: 9pt"><a href="?infotype=学术">学术</a></td> 
+ <td align="center" style="font-size: 9pt"><a href=# onclick="document.fsearch1.search_type.value='fu';document.fsearch1.keyword.value='管理学院';document.fsearch1.dayy.value='30#一个月';document.fsearch1.searchb1.click();">管理学院</a></td> 
+ <td> 
+ <a target=_blank href="view.asp?id=345220" class=fontcolor3>·深圳大学管理学院20周年院庆系列学术讲座（第29期）暨深圳大学管理科学前沿论坛（第45期）</a></td> 
+ <td align="center"></td> 
+ <td align="center" style="font-size: 9pt">2017-9-1</td> 
+
+</tr> 
+  
+<tr bgcolor=#FFFFFF> 
+ <td align="center">48</td> 
+ <td align="center" style="font-size: 9pt"><a href="?infotype=教务">教务</a></td> 
+ <td align="center" style="font-size: 9pt"><a href=# onclick="document.fsearch1.search_type.value='fu';document.fsearch1.keyword.value='电子科学与技术学院';document.fsearch1.dayy.value='30#一个月';document.fsearch1.searchb1.click();">电子科学与技术学院</a></td> 
+ <td> 
+ <a target=_blank href="view.asp?id=345219" class=fontcolor3>·“计算成像”专题研讨短课开班啦</a></td> 
+ <td align="center"></td> 
+ <td align="center" style="font-size: 9pt">2017-9-1</td> 
+
+</tr> 
+  
+<tr > 
+ <td align="center">49</td> 
+ <td align="center" style="font-size: 9pt"><a href="?infotype=教务">教务</a></td> 
+ <td align="center" style="font-size: 9pt"><a href=# onclick="document.fsearch1.search_type.value='fu';document.fsearch1.keyword.value='教务部';document.fsearch1.dayy.value='30#一个月';document.fsearch1.searchb1.click();">教务部</a></td> 
+ <td> 
+ <a target=_blank href="view.asp?id=345218" class=fontcolor3>·<font color=black>关于上报2017-2018学年第一学期教学进度表的通知</font></a></td> 
+ <td align="center"></td> 
+ <td align="center" style="font-size: 9pt">2017-9-1</td> 
+
+</tr> 
+  
+<tr bgcolor=#FFFFFF> 
+ <td align="center">50</td> 
+ <td align="center" style="font-size: 9pt"><a href="?infotype=校园">校园</a></td> 
+ <td align="center" style="font-size: 9pt"><a href=# onclick="document.fsearch1.search_type.value='fu';document.fsearch1.keyword.value='继续教育学院';document.fsearch1.dayy.value='30#一个月';document.fsearch1.searchb1.click();">继续教育学院</a></td> 
+ <td> 
+ <a target=_blank href="view.asp?id=345217" class=fontcolor3>·招聘启事</a></td> 
+ <td align="center"></td> 
+ <td align="center" style="font-size: 9pt">2017-9-1</td> 
+
+</tr> 
+  
+<tr > 
+ <td align="center">51</td> 
+ <td align="center" style="font-size: 9pt"><a href="?infotype=校园">校园</a></td> 
+ <td align="center" style="font-size: 9pt"><a href=# onclick="document.fsearch1.search_type.value='fu';document.fsearch1.keyword.value='应用心理学研究与咨询中心';document.fsearch1.dayy.value='30#一个月';document.fsearch1.searchb1.click();">应用心理学研究与咨询中心</a></td> 
+ <td> 
+ <a target=_blank href="view.asp?id=345216" class=fontcolor3>·心理咨询通知</a></td> 
+ <td align="center"></td> 
+ <td align="center" style="font-size: 9pt">2017-9-1</td> 
+
+</tr> 
+  
+<tr bgcolor=#FFFFFF> 
+ <td align="center">52</td> 
+ <td align="center" style="font-size: 9pt"><a href="?infotype=教务">教务</a></td> 
+ <td align="center" style="font-size: 9pt"><a href=# onclick="document.fsearch1.search_type.value='fu';document.fsearch1.keyword.value='机电与控制工程学院';document.fsearch1.dayy.value='30#一个月';document.fsearch1.searchb1.click();">机电与控制工程学院</a></td> 
+ <td> 
+ <a target=_blank href="view.asp?id=345215" class=fontcolor3>·机电学院20171学期自行安排实验室上课地点通知</a></td> 
+ <td align="center"></td> 
+ <td align="center" style="font-size: 9pt">2017-9-1</td> 
+
+</tr> 
+  
+<tr > 
+ <td align="center">53</td> 
+ <td align="center" style="font-size: 9pt"><a href="?infotype=学工">学工</a></td> 
+ <td align="center" style="font-size: 9pt"><a href=# onclick="document.fsearch1.search_type.value='fu';document.fsearch1.keyword.value='经济学院';document.fsearch1.dayy.value='30#一个月';document.fsearch1.searchb1.click();">经济学院</a></td> 
+ <td> 
+ <a target=_blank href="view.asp?id=345214" class=fontcolor3>·普华永道2018校园招聘宣讲会（包括毕业生、硕士领英计划、实习生等项目）</a></td> 
+ <td align="center"></td> 
+ <td align="center" style="font-size: 9pt">2017-9-1</td> 
+
+</tr> 
+  
+<tr bgcolor=#FFFFFF> 
+ <td align="center">54</td> 
+ <td align="center" style="font-size: 9pt"><a href="?infotype=教务">教务</a></td> 
+ <td align="center" style="font-size: 9pt"><a href=# onclick="document.fsearch1.search_type.value='fu';document.fsearch1.keyword.value='数学与统计学院';document.fsearch1.dayy.value='30#一个月';document.fsearch1.searchb1.click();">数学与统计学院</a></td> 
+ <td> 
+ <a target=_blank href="view.asp?id=345210" class=fontcolor3>·数学与统计学院(20171学期)自行安排实验室实验地点</a></td> 
+ <td align="center"></td> 
+ <td align="center" style="font-size: 9pt">2017-9-1</td> 
+
+</tr> 
+  
+<tr > 
+ <td align="center">55</td> 
+ <td align="center" style="font-size: 9pt"><a href="?infotype=学术">学术</a></td> 
+ <td align="center" style="font-size: 9pt"><a href=# onclick="document.fsearch1.search_type.value='fu';document.fsearch1.keyword.value='科学技术部';document.fsearch1.dayy.value='30#一个月';document.fsearch1.searchb1.click();">科学技术部</a></td> 
+ <td> 
+ <a target=_blank href="view.asp?id=344807" class=fontcolor3>·<b>关于征集第十九届高交会参展项目的通知</b></a></td> 
+ <td align="center"><img border=0 src=../images/attach.gif></td> 
+ <td align="center" style="font-size: 9pt">2017-9-1</td> 
+
+</tr> 
+  
+<tr bgcolor=#FFFFFF> 
+ <td align="center">56</td> 
+ <td align="center" style="font-size: 9pt"><a href="?infotype=校园">校园</a></td> 
+ <td align="center" style="font-size: 9pt"><a href=# onclick="document.fsearch1.search_type.value='fu';document.fsearch1.keyword.value='国际交流与合作部';document.fsearch1.dayy.value='30#一个月';document.fsearch1.searchb1.click();">国际交流与合作部</a></td> 
+ <td> 
+ <a target=_blank href="view.asp?id=345148" class=fontcolor3>·内地大学升学资助计划申请-面向香港学生</a></td> 
+ <td align="center"></td> 
+ <td align="center" style="font-size: 9pt">2017-9-1</td> 
+
+</tr> 
+  
+<tr > 
+ <td align="center">57</td> 
+ <td align="center" style="font-size: 9pt"><a href="?infotype=校园">校园</a></td> 
+ <td align="center" style="font-size: 9pt"><a href=# onclick="document.fsearch1.search_type.value='fu';document.fsearch1.keyword.value='深大学报人文版';document.fsearch1.dayy.value='30#一个月';document.fsearch1.searchb1.click();">深大学报人文版</a></td> 
+ <td> 
+ <a target=_blank href="view.asp?id=345212" class=fontcolor3>·学报人文版关于招聘研究生兼任“三助一辅”工作岗位的通知</a></td> 
+ <td align="center"></td> 
+ <td align="center" style="font-size: 9pt">2017-9-1</td> 
+
+</tr> 
+  
+<tr bgcolor=#FFFFFF> 
+ <td align="center">58</td> 
+ <td align="center" style="font-size: 9pt"><a href="?infotype=校园">校园</a></td> 
+ <td align="center" style="font-size: 9pt"><a href=# onclick="document.fsearch1.search_type.value='fu';document.fsearch1.keyword.value='港澳基本法研究中心';document.fsearch1.dayy.value='30#一个月';document.fsearch1.searchb1.click();">港澳基本法研究中心</a></td> 
+ <td> 
+ <a target=_blank href="view.asp?id=345211" class=fontcolor3>·外交部条法司致函学校感谢刘洪一书记和港澳基本法研究中心</a></td> 
+ <td align="center"></td> 
+ <td align="center" style="font-size: 9pt">2017-9-1</td> 
+
+</tr> 
+  
+<tr > 
+ <td align="center">59</td> 
+ <td align="center" style="font-size: 9pt"><a href="?infotype=学工">学工</a></td> 
+ <td align="center" style="font-size: 9pt"><a href=# onclick="document.fsearch1.search_type.value='fu';document.fsearch1.keyword.value='信息中心';document.fsearch1.dayy.value='30#一个月';document.fsearch1.searchb1.click();">信息中心</a></td> 
+ <td> 
+ <a target=_blank href="view.asp?id=333543" class=fontcolor3>·<b><font color=black>信息中心文科楼H5-401、H5-502机房招聘勤工俭学学生</font></b></a></td> 
+ <td align="center"></td> 
+ <td align="center" style="font-size: 9pt">2017-9-1</td> 
+
+</tr> 
+  
+<tr bgcolor=#FFFFFF> 
+ <td align="center">60</td> 
+ <td align="center" style="font-size: 9pt"><a href="?infotype=学术">学术</a></td> 
+ <td align="center" style="font-size: 9pt"><a href=# onclick="document.fsearch1.search_type.value='fu';document.fsearch1.keyword.value='社会科学部';document.fsearch1.dayy.value='30#一个月';document.fsearch1.searchb1.click();">社会科学部</a></td> 
+ <td> 
+ <a target=_blank href="view.asp?id=345209" class=fontcolor3>·关于申报2017年度国家语委语言文字科研优秀成果后期资助计划项目的通知</a></td> 
+ <td align="center"></td> 
+ <td align="center" style="font-size: 9pt">2017-9-1</td> 
+
+</tr> 
+  
+<tr > 
+ <td align="center">61</td> 
+ <td align="center" style="font-size: 9pt"><a href="?infotype=校园">校园</a></td> 
+ <td align="center" style="font-size: 9pt"><a href=# onclick="document.fsearch1.search_type.value='fu';document.fsearch1.keyword.value='校团委';document.fsearch1.dayy.value='30#一个月';document.fsearch1.searchb1.click();">校团委</a></td> 
+ <td> 
+ <a target=_blank href="view.asp?id=345040" class=fontcolor3>·<b><font color=black>校团委关于招聘勤工助学学生的通知</font></b></a></td> 
+ <td align="center"><img border=0 src=../images/attach.gif></td> 
+ <td align="center" style="font-size: 9pt">2017-9-1</td> 
+
+</tr> 
+  
+<tr bgcolor=#FFFFFF> 
+ <td align="center">62</td> 
+ <td align="center" style="font-size: 9pt"><a href="?infotype=行政">行政</a></td> 
+ <td align="center" style="font-size: 9pt"><a href=# onclick="document.fsearch1.search_type.value='fu';document.fsearch1.keyword.value='研究生院';document.fsearch1.dayy.value='30#一个月';document.fsearch1.searchb1.click();">研究生院</a></td> 
+ <td> 
+ <a target=_blank href="view.asp?id=345207" class=fontcolor3>·<b>【重发】关于做好2018年研究生招生宣传工作有关事项的通知</b></a></td> 
+ <td align="center"><img border=0 src=../images/attach.gif></td> 
+ <td align="center" style="font-size: 9pt">2017-9-1</td> 
+
+</tr> 
+  
+<tr > 
+ <td align="center">63</td> 
+ <td align="center" style="font-size: 9pt"><a href="?infotype=教务">教务</a></td> 
+ <td align="center" style="font-size: 9pt"><a href=# onclick="document.fsearch1.search_type.value='fu';document.fsearch1.keyword.value='研究生院';document.fsearch1.dayy.value='30#一个月';document.fsearch1.searchb1.click();">研究生院</a></td> 
+ <td> 
+ <a target=_blank href="view.asp?id=344687" class=fontcolor3>·<b>深圳大学2018年硕士研究生招生章程</b></a></td> 
+ <td align="center"></td> 
+ <td align="center" style="font-size: 9pt">2017-9-1</td> 
+
+</tr> 
+  
+<tr bgcolor=#FFFFFF> 
+ <td align="center">64</td> 
+ <td align="center" style="font-size: 9pt"><a href="?infotype=行政">行政</a></td> 
+ <td align="center" style="font-size: 9pt"><a href=# onclick="document.fsearch1.search_type.value='fu';document.fsearch1.keyword.value='研究生院';document.fsearch1.dayy.value='30#一个月';document.fsearch1.searchb1.click();">研究生院</a></td> 
+ <td> 
+ <a target=_blank href="view.asp?id=344971" class=fontcolor3>·关于做好面向新增推荐免试高等学校硕士推免生招生宣传工作的通知</a></td> 
+ <td align="center"></td> 
+ <td align="center" style="font-size: 9pt">2017-9-1</td> 
+
+</tr> 
+  
+<tr > 
+ <td align="center">65</td> 
+ <td align="center" style="font-size: 9pt"><a href="?infotype=教务">教务</a></td> 
+ <td align="center" style="font-size: 9pt"><a href=# onclick="document.fsearch1.search_type.value='fu';document.fsearch1.keyword.value='研究生院';document.fsearch1.dayy.value='30#一个月';document.fsearch1.searchb1.click();">研究生院</a></td> 
+ <td> 
+ <a target=_blank href="view.asp?id=344688" class=fontcolor3>·<b>深圳大学2018年接收推荐免试攻读硕士学位研究生章程</b></a></td> 
+ <td align="center"></td> 
+ <td align="center" style="font-size: 9pt">2017-9-1</td> 
+
+</tr> 
+  
+<tr bgcolor=#FFFFFF> 
+ <td align="center">66</td> 
+ <td align="center" style="font-size: 9pt"><a href="?infotype=教务">教务</a></td> 
+ <td align="center" style="font-size: 9pt"><a href=# onclick="document.fsearch1.search_type.value='fu';document.fsearch1.keyword.value='研究生院';document.fsearch1.dayy.value='30#一个月';document.fsearch1.searchb1.click();">研究生院</a></td> 
+ <td> 
+ <a target=_blank href="view.asp?id=344686" class=fontcolor3>·<b>★深圳大学2018年硕士研究生招生专业目录</b></a></td> 
+ <td align="center"></td> 
+ <td align="center" style="font-size: 9pt">2017-9-1</td> 
+
+</tr> 
+  
+<tr > 
+ <td align="center">67</td> 
+ <td align="center" style="font-size: 9pt"><a href="?infotype=教务">教务</a></td> 
+ <td align="center" style="font-size: 9pt"><a href=# onclick="document.fsearch1.search_type.value='fu';document.fsearch1.keyword.value='外国语学院';document.fsearch1.dayy.value='30#一个月';document.fsearch1.searchb1.click();">外国语学院</a></td> 
+ <td> 
+ <a target=_blank href="view.asp?id=345159" class=fontcolor3>·2016-2017第二学期研究生公共英语期末考试缓考安排</a></td> 
+ <td align="center"></td> 
+ <td align="center" style="font-size: 9pt">2017-9-1</td> 
+
+</tr> 
+  
+<tr bgcolor=#FFFFFF> 
+ <td align="center">68</td> 
+ <td align="center" style="font-size: 9pt"><a href="?infotype=学术">学术</a></td> 
+ <td align="center" style="font-size: 9pt"><a href=# onclick="document.fsearch1.search_type.value='fu';document.fsearch1.keyword.value='图书馆';document.fsearch1.dayy.value='30#一个月';document.fsearch1.searchb1.click();">图书馆</a></td> 
+ <td> 
+ <a target=_blank href="view.asp?id=345205" class=fontcolor3>·新购资源：哈佛大学出版社电子书</a></td> 
+ <td align="center"></td> 
+ <td align="center" style="font-size: 9pt">2017-9-1</td> 
+
+</tr> 
+  
+<tr > 
+ <td align="center">69</td> 
+ <td align="center" style="font-size: 9pt"><a href="?infotype=学术">学术</a></td> 
+ <td align="center" style="font-size: 9pt"><a href=# onclick="document.fsearch1.search_type.value='fu';document.fsearch1.keyword.value='社会科学部';document.fsearch1.dayy.value='30#一个月';document.fsearch1.searchb1.click();">社会科学部</a></td> 
+ <td> 
+ <a target=_blank href="view.asp?id=345202" class=fontcolor3>·<b>广东省第七届哲学社会科学优秀成果奖获奖名单公布</b></a></td> 
+ <td align="center"></td> 
+ <td align="center" style="font-size: 9pt">2017-9-1</td> 
+
+</tr> 
+  
+<tr bgcolor=#FFFFFF> 
+ <td align="center">70</td> 
+ <td align="center" style="font-size: 9pt"><a href="?infotype=校园">校园</a></td> 
+ <td align="center" style="font-size: 9pt"><a href=# onclick="document.fsearch1.search_type.value='fu';document.fsearch1.keyword.value='外国语学院';document.fsearch1.dayy.value='30#一个月';document.fsearch1.searchb1.click();">外国语学院</a></td> 
+ <td> 
+ <a target=_blank href="view.asp?id=345201" class=fontcolor3>·转发：深圳市电子商务协会感谢信</a></td> 
+ <td align="center"></td> 
+ <td align="center" style="font-size: 9pt">2017-9-1</td> 
+
+</tr> 
+  
+<tr > 
+ <td align="center">71</td> 
+ <td align="center" style="font-size: 9pt"><a href="?infotype=教务">教务</a></td> 
+ <td align="center" style="font-size: 9pt"><a href=# onclick="document.fsearch1.search_type.value='fu';document.fsearch1.keyword.value='体育部';document.fsearch1.dayy.value='30#一个月';document.fsearch1.searchb1.click();">体育部</a></td> 
+ <td> 
+ <a target=_blank href="view.asp?id=345200" class=fontcolor3>·<b>关于羽毛球、毽球课、体育舞蹈（西丽）停课通知</b></a></td> 
+ <td align="center"></td> 
+ <td align="center" style="font-size: 9pt">2017-9-1</td> 
+
+</tr> 
+  
+<tr bgcolor=#FFFFFF> 
+ <td align="center">72</td> 
+ <td align="center" style="font-size: 9pt"><a href="?infotype=教务">教务</a></td> 
+ <td align="center" style="font-size: 9pt"><a href=# onclick="document.fsearch1.search_type.value='fu';document.fsearch1.keyword.value='体育部';document.fsearch1.dayy.value='30#一个月';document.fsearch1.searchb1.click();">体育部</a></td> 
+ <td> 
+ <a target=_blank href="view.asp?id=345199" class=fontcolor3>·<b>关于足球、垒球俱乐部临时调整上课地点的通知</b></a></td> 
+ <td align="center"></td> 
+ <td align="center" style="font-size: 9pt">2017-9-1</td> 
+
+</tr> 
+  
+<tr > 
+ <td align="center">73</td> 
+ <td align="center" style="font-size: 9pt"><a href="?infotype=教务">教务</a></td> 
+ <td align="center" style="font-size: 9pt"><a href=# onclick="document.fsearch1.search_type.value='fu';document.fsearch1.keyword.value='教务部';document.fsearch1.dayy.value='30#一个月';document.fsearch1.searchb1.click();">教务部</a></td> 
+ <td> 
+ <a target=_blank href="view.asp?id=345197" class=fontcolor3>·<b><font color=red>关于2017级本科新生大学英语水平分级考试安排监考的通知</font></b></a></td> 
+ <td align="center"></td> 
+ <td align="center" style="font-size: 9pt">2017-9-1</td> 
+
+</tr> 
+  
+<tr bgcolor=#FFFFFF> 
+ <td align="center">74</td> 
+ <td align="center" style="font-size: 9pt"><a href="?infotype=学工">学工</a></td> 
+ <td align="center" style="font-size: 9pt"><a href=# onclick="document.fsearch1.search_type.value='fu';document.fsearch1.keyword.value='组织部';document.fsearch1.dayy.value='30#一个月';document.fsearch1.searchb1.click();">组织部</a></td> 
+ <td> 
+ <a target=_blank href="view.asp?id=345047" class=fontcolor3>·组织部2017-2018学年第一学期勤工助学岗位招聘</a></td> 
+ <td align="center"></td> 
+ <td align="center" style="font-size: 9pt">2017-9-1</td> 
+
+</tr> 
+  
+<tr > 
+ <td align="center">75</td> 
+ <td align="center" style="font-size: 9pt"><a href="?infotype=校园">校园</a></td> 
+ <td align="center" style="font-size: 9pt"><a href=# onclick="document.fsearch1.search_type.value='fu';document.fsearch1.keyword.value='西丽校区管委会';document.fsearch1.dayy.value='30#一个月';document.fsearch1.searchb1.click();">西丽校区管委会</a></td> 
+ <td> 
+ <a target=_blank href="view.asp?id=345196" class=fontcolor3>·<b><font color=black>西丽校区关于综合服务大厅一楼自习室及学生活动空间使用的通知</font></b></a></td> 
+ <td align="center"></td> 
+ <td align="center" style="font-size: 9pt">2017-9-1</td> 
+
+</tr> 
+  
+<tr bgcolor=#FFFFFF> 
+ <td align="center">76</td> 
+ <td align="center" style="font-size: 9pt"><a href="?infotype=学术">学术</a></td> 
+ <td align="center" style="font-size: 9pt"><a href=# onclick="document.fsearch1.search_type.value='fu';document.fsearch1.keyword.value='社会科学部';document.fsearch1.dayy.value='30#一个月';document.fsearch1.searchb1.click();">社会科学部</a></td> 
+ <td> 
+ <a target=_blank href="view.asp?id=344980" class=fontcolor3>·关于2017年度教育部哲学社会科学研究重大课题攻关项目招标工作的通知</a></td> 
+ <td align="center"></td> 
+ <td align="center" style="font-size: 9pt">2017-9-1</td> 
+
+</tr> 
+  
+<tr > 
+ <td align="center">77</td> 
+ <td align="center" style="font-size: 9pt"><a href="?infotype=学术">学术</a></td> 
+ <td align="center" style="font-size: 9pt"><a href=# onclick="document.fsearch1.search_type.value='fu';document.fsearch1.keyword.value='社会科学部';document.fsearch1.dayy.value='30#一个月';document.fsearch1.searchb1.click();">社会科学部</a></td> 
+ <td> 
+ <a target=_blank href="view.asp?id=344696" class=fontcolor3>·<b>关于2017年度国家社会科学基金重大项目投标工作的通知（更新）</b></a></td> 
+ <td align="center"><img border=0 src=../images/attach.gif></td> 
+ <td align="center" style="font-size: 9pt">2017-9-1</td> 
+
+</tr> 
+  
+<tr bgcolor=#FFFFFF> 
+ <td align="center">78</td> 
+ <td align="center" style="font-size: 9pt"><a href="?infotype=学术">学术</a></td> 
+ <td align="center" style="font-size: 9pt"><a href=# onclick="document.fsearch1.search_type.value='fu';document.fsearch1.keyword.value='社会科学部';document.fsearch1.dayy.value='30#一个月';document.fsearch1.searchb1.click();">社会科学部</a></td> 
+ <td> 
+ <a target=_blank href="view.asp?id=344782" class=fontcolor3>·2017年国家社科基金中华学术外译项目申报通知</a></td> 
+ <td align="center"></td> 
+ <td align="center" style="font-size: 9pt">2017-9-1</td> 
+
+</tr> 
+  
+<tr > 
+ <td align="center">79</td> 
+ <td align="center" style="font-size: 9pt"><a href="?infotype=学术">学术</a></td> 
+ <td align="center" style="font-size: 9pt"><a href=# onclick="document.fsearch1.search_type.value='fu';document.fsearch1.keyword.value='社会科学部';document.fsearch1.dayy.value='30#一个月';document.fsearch1.searchb1.click();">社会科学部</a></td> 
+ <td> 
+ <a target=_blank href="view.asp?id=344870" class=fontcolor3>·关于2017年度教育部哲学社会科学研究后期资助项目申报工作的通知（材料上交截止到6号）</a></td> 
+ <td align="center"></td> 
+ <td align="center" style="font-size: 9pt">2017-9-1</td> 
+
+</tr> 
+  
+<tr bgcolor=#FFFFFF> 
+ <td align="center">80</td> 
+ <td align="center" style="font-size: 9pt"><a href="?infotype=学术">学术</a></td> 
+ <td align="center" style="font-size: 9pt"><a href=# onclick="document.fsearch1.search_type.value='fu';document.fsearch1.keyword.value='社会科学部';document.fsearch1.dayy.value='30#一个月';document.fsearch1.searchb1.click();">社会科学部</a></td> 
+ <td> 
+ <a target=_blank href="view.asp?id=340416" class=fontcolor3>·<b>关于2017年《广东哲学社会科学成果文库》申报的通知</b></a></td> 
+ <td align="center"><img border=0 src=../images/attach.gif></td> 
+ <td align="center" style="font-size: 9pt">2017-9-1</td> 
+
+</tr> 
+  
+<tr > 
+ <td align="center">81</td> 
+ <td align="center" style="font-size: 9pt"><a href="?infotype=学术">学术</a></td> 
+ <td align="center" style="font-size: 9pt"><a href=# onclick="document.fsearch1.search_type.value='fu';document.fsearch1.keyword.value='社会科学部';document.fsearch1.dayy.value='30#一个月';document.fsearch1.searchb1.click();">社会科学部</a></td> 
+ <td> 
+ <a target=_blank href="view.asp?id=341267" class=fontcolor3>·<b>广东省哲学社会科学“十三五”规划2017年度后期资助项目申报通知</b></a></td> 
+ <td align="center"><img border=0 src=../images/attach.gif></td> 
+ <td align="center" style="font-size: 9pt">2017-9-1</td> 
+
+</tr> 
+  
+<tr bgcolor=#FFFFFF> 
+ <td align="center">82</td> 
+ <td align="center" style="font-size: 9pt"><a href="?infotype=学术">学术</a></td> 
+ <td align="center" style="font-size: 9pt"><a href=# onclick="document.fsearch1.search_type.value='fu';document.fsearch1.keyword.value='社会科学部';document.fsearch1.dayy.value='30#一个月';document.fsearch1.searchb1.click();">社会科学部</a></td> 
+ <td> 
+ <a target=_blank href="view.asp?id=341813" class=fontcolor3>·商务部办公厅关于征集商务发展研究成果奖（2017年）参评作品有关事宜的函</a></td> 
+ <td align="center"></td> 
+ <td align="center" style="font-size: 9pt">2017-9-1</td> 
+
+</tr> 
+  
+<tr > 
+ <td align="center">83</td> 
+ <td align="center" style="font-size: 9pt"><a href="?infotype=学术">学术</a></td> 
+ <td align="center" style="font-size: 9pt"><a href=# onclick="document.fsearch1.search_type.value='fu';document.fsearch1.keyword.value='社会科学部';document.fsearch1.dayy.value='30#一个月';document.fsearch1.searchb1.click();">社会科学部</a></td> 
+ <td> 
+ <a target=_blank href="view.asp?id=342192" class=fontcolor3>·关于清理教育部人文社会科学研究一般项目的通知</a></td> 
+ <td align="center"><img border=0 src=../images/attach.gif></td> 
+ <td align="center" style="font-size: 9pt">2017-9-1</td> 
+
+</tr> 
+  
+<tr bgcolor=#FFFFFF> 
+ <td align="center">84</td> 
+ <td align="center" style="font-size: 9pt"><a href="?infotype=学术">学术</a></td> 
+ <td align="center" style="font-size: 9pt"><a href=# onclick="document.fsearch1.search_type.value='fu';document.fsearch1.keyword.value='社会科学部';document.fsearch1.dayy.value='30#一个月';document.fsearch1.searchb1.click();">社会科学部</a></td> 
+ <td> 
+ <a target=_blank href="view.asp?id=339357" class=fontcolor3>·<b>转发关于征集2017广东社会科学学术年会论文的通知</b></a></td> 
+ <td align="center"></td> 
+ <td align="center" style="font-size: 9pt">2017-9-1</td> 
+
+</tr> 
+  
+<tr > 
+ <td align="center">85</td> 
+ <td align="center" style="font-size: 9pt"><a href="?infotype=行政">行政</a></td> 
+ <td align="center" style="font-size: 9pt"><a href=# onclick="document.fsearch1.search_type.value='fu';document.fsearch1.keyword.value='实验与设备部';document.fsearch1.dayy.value='30#一个月';document.fsearch1.searchb1.click();">实验与设备部</a></td> 
+ <td> 
+ <a target=_blank href="view.asp?id=343680" class=fontcolor3>·<b><font color=black>关于个人消费类电子数码产品采购的通知</font></b></a></td> 
+ <td align="center"></td> 
+ <td align="center" style="font-size: 9pt">2017-9-1</td> 
+
+</tr> 
+  
+<tr bgcolor=#FFFFFF> 
+ <td align="center">86</td> 
+ <td align="center" style="font-size: 9pt"><a href="?infotype=学术">学术</a></td> 
+ <td align="center" style="font-size: 9pt"><a href=# onclick="document.fsearch1.search_type.value='fu';document.fsearch1.keyword.value='实验与设备部';document.fsearch1.dayy.value='30#一个月';document.fsearch1.searchb1.click();">实验与设备部</a></td> 
+ <td> 
+ <a target=_blank href="view.asp?id=342876" class=fontcolor3>·<b>关于申报2017年度深圳大学实验室与设备管理研究基金项目的通知</b></a></td> 
+ <td align="center"><img border=0 src=../images/attach.gif></td> 
+ <td align="center" style="font-size: 9pt">2017-9-1</td> 
+
+</tr> 
+  
+<tr > 
+ <td align="center">87</td> 
+ <td align="center" style="font-size: 9pt"><a href="?infotype=行政">行政</a></td> 
+ <td align="center" style="font-size: 9pt"><a href=# onclick="document.fsearch1.search_type.value='fu';document.fsearch1.keyword.value='实验与设备部';document.fsearch1.dayy.value='30#一个月';document.fsearch1.searchb1.click();">实验与设备部</a></td> 
+ <td> 
+ <a target=_blank href="view.asp?id=344984" class=fontcolor3>·<b>关于做好2016/2017学年实验室信息统计工作的通知</b></a></td> 
+ <td align="center"><img border=0 src=../images/attach.gif></td> 
+ <td align="center" style="font-size: 9pt">2017-9-1</td> 
+
+</tr> 
+  
+<tr bgcolor=#FFFFFF> 
+ <td align="center">88</td> 
+ <td align="center" style="font-size: 9pt"><a href="?infotype=学术">学术</a></td> 
+ <td align="center" style="font-size: 9pt"><a href=# onclick="document.fsearch1.search_type.value='fu';document.fsearch1.keyword.value='实验与设备部';document.fsearch1.dayy.value='30#一个月';document.fsearch1.searchb1.click();">实验与设备部</a></td> 
+ <td> 
+ <a target=_blank href="view.asp?id=344985" class=fontcolor3>·<b>关于2016年度深圳大学学生创新发展基金基础实验项目结题的通知</b></a></td> 
+ <td align="center"><img border=0 src=../images/attach.gif></td> 
+ <td align="center" style="font-size: 9pt">2017-9-1</td> 
+
+</tr> 
+  
+<tr > 
+ <td align="center">89</td> 
+ <td align="center" style="font-size: 9pt"><a href="?infotype=行政">行政</a></td> 
+ <td align="center" style="font-size: 9pt"><a href=# onclick="document.fsearch1.search_type.value='fu';document.fsearch1.keyword.value='实验与设备部';document.fsearch1.dayy.value='30#一个月';document.fsearch1.searchb1.click();">实验与设备部</a></td> 
+ <td> 
+ <a target=_blank href="view.asp?id=344991" class=fontcolor3>·<b>关于科研经费追加政府采购计划采用网上申报的通知</b></a></td> 
+ <td align="center"></td> 
+ <td align="center" style="font-size: 9pt">2017-9-1</td> 
+
+</tr> 
+  
+<tr bgcolor=#FFFFFF> 
+ <td align="center">90</td> 
+ <td align="center" style="font-size: 9pt"><a href="?infotype=学术">学术</a></td> 
+ <td align="center" style="font-size: 9pt"><a href=# onclick="document.fsearch1.search_type.value='fu';document.fsearch1.keyword.value='实验与设备部';document.fsearch1.dayy.value='30#一个月';document.fsearch1.searchb1.click();">实验与设备部</a></td> 
+ <td> 
+ <a target=_blank href="view.asp?id=345169" class=fontcolor3>·<b>欢迎我校2015、2016级本科同学申报2017年度深圳大学学生创新发展基金基础实验项目</b></a></td> 
+ <td align="center"><img border=0 src=../images/attach.gif></td> 
+ <td align="center" style="font-size: 9pt">2017-9-1</td> 
+
+</tr> 
+  
+<tr > 
+ <td align="center">91</td> 
+ <td align="center" style="font-size: 9pt"><a href="?infotype=校园">校园</a></td> 
+ <td align="center" style="font-size: 9pt"><a href=# onclick="document.fsearch1.search_type.value='fu';document.fsearch1.keyword.value='信息中心';document.fsearch1.dayy.value='30#一个月';document.fsearch1.searchb1.click();">信息中心</a></td> 
+ <td> 
+ <a target=_blank href="view.asp?id=345195" class=fontcolor3>·Blackboard网上教学系统服务恢复通知</a></td> 
+ <td align="center"></td> 
+ <td align="center" style="font-size: 9pt">2017-9-1</td> 
+
+</tr> 
+  
+<tr bgcolor=#FFFFFF> 
+ <td align="center">92</td> 
+ <td align="center" style="font-size: 9pt"><a href="?infotype=教务">教务</a></td> 
+ <td align="center" style="font-size: 9pt"><a href=# onclick="document.fsearch1.search_type.value='fu';document.fsearch1.keyword.value='计算机与软件学院';document.fsearch1.dayy.value='30#一个月';document.fsearch1.searchb1.click();">计算机与软件学院</a></td> 
+ <td> 
+ <a target=_blank href="view.asp?id=345194" class=fontcolor3>·计算机与软件学院职场分享会</a></td> 
+ <td align="center"></td> 
+ <td align="center" style="font-size: 9pt">2017-8-31</td> 
+
+</tr> 
+  
+<tr > 
+ <td align="center">93</td> 
+ <td align="center" style="font-size: 9pt"><a href="?infotype=校园">校园</a></td> 
+ <td align="center" style="font-size: 9pt"><a href=# onclick="document.fsearch1.search_type.value='fu';document.fsearch1.keyword.value='学生部';document.fsearch1.dayy.value='30#一个月';document.fsearch1.searchb1.click();">学生部</a></td> 
+ <td> 
+ <a target=_blank href="view.asp?id=345193" class=fontcolor3>·<b><font color=black>2017-2018学年第一学期学生部心理辅导中心心理辅导安排</font></b></a></td> 
+ <td align="center"></td> 
+ <td align="center" style="font-size: 9pt">2017-8-31</td> 
+
+</tr> 
+  
+<tr bgcolor=#FFFFFF> 
+ <td align="center">94</td> 
+ <td align="center" style="font-size: 9pt"><a href="?infotype=教务">教务</a></td> 
+ <td align="center" style="font-size: 9pt"><a href=# onclick="document.fsearch1.search_type.value='fu';document.fsearch1.keyword.value='机电与控制工程学院';document.fsearch1.dayy.value='30#一个月';document.fsearch1.searchb1.click();">机电与控制工程学院</a></td> 
+ <td> 
+ <a target=_blank href="view.asp?id=345191" class=fontcolor3>·机电学院全校选修课《人因工程与用户体验》课程简介与特色</a></td> 
+ <td align="center"></td> 
+ <td align="center" style="font-size: 9pt">2017-8-31</td> 
+
+</tr> 
+  
+<tr > 
+ <td align="center">95</td> 
+ <td align="center" style="font-size: 9pt"><a href="?infotype=教务">教务</a></td> 
+ <td align="center" style="font-size: 9pt"><a href=# onclick="document.fsearch1.search_type.value='fu';document.fsearch1.keyword.value='机电与控制工程学院';document.fsearch1.dayy.value='30#一个月';document.fsearch1.searchb1.click();">机电与控制工程学院</a></td> 
+ <td> 
+ <a target=_blank href="view.asp?id=345190" class=fontcolor3>·机电学院全校选修课《人因工程概论》课程简介与特色</a></td> 
+ <td align="center"></td> 
+ <td align="center" style="font-size: 9pt">2017-8-31</td> 
+
+</tr> 
+  
+<tr bgcolor=#FFFFFF> 
+ <td align="center">96</td> 
+ <td align="center" style="font-size: 9pt"><a href="?infotype=行政">行政</a></td> 
+ <td align="center" style="font-size: 9pt"><a href=# onclick="document.fsearch1.search_type.value='fu';document.fsearch1.keyword.value='人力资源部';document.fsearch1.dayy.value='30#一个月';document.fsearch1.searchb1.click();">人力资源部</a></td> 
+ <td> 
+ <a target=_blank href="view.asp?id=345174" class=fontcolor3>·关于申请广东省珠江人才计划“科技创新领军人才、青年拔尖人才、海外来粤短期工作专家”的通知</a></td> 
+ <td align="center"><img border=0 src=../images/attach.gif></td> 
+ <td align="center" style="font-size: 9pt">2017-8-31</td> 
+
+</tr> 
+  
+<tr > 
+ <td align="center">97</td> 
+ <td align="center" style="font-size: 9pt"><a href="?infotype=校园">校园</a></td> 
+ <td align="center" style="font-size: 9pt"><a href=# onclick="document.fsearch1.search_type.value='fu';document.fsearch1.keyword.value='师范学院';document.fsearch1.dayy.value='30#一个月';document.fsearch1.searchb1.click();">师范学院</a></td> 
+ <td> 
+ <a target=_blank href="view.asp?id=345173" class=fontcolor3>·世界摄影大师“罗伯特&#8226;卡帕影像回顾展”在深圳大学美术馆展出</a></td> 
+ <td align="center"><img border=0 src=../images/attach.gif></td> 
+ <td align="center" style="font-size: 9pt">2017-8-31</td> 
+
+</tr> 
+  
+<tr bgcolor=#FFFFFF> 
+ <td align="center">98</td> 
+ <td align="center" style="font-size: 9pt"><a href="?infotype=学工">学工</a></td> 
+ <td align="center" style="font-size: 9pt"><a href=# onclick="document.fsearch1.search_type.value='fu';document.fsearch1.keyword.value='学生部';document.fsearch1.dayy.value='30#一个月';document.fsearch1.searchb1.click();">学生部</a></td> 
+ <td> 
+ <a target=_blank href="view.asp?id=345071" class=fontcolor3>·<b>学生档案室后海校区2017级迎新工作助理招聘启事（已招满）</b></a></td> 
+ <td align="center"></td> 
+ <td align="center" style="font-size: 9pt">2017-8-31</td> 
+
+</tr> 
+  
+<tr > 
+ <td align="center">99</td> 
+ <td align="center" style="font-size: 9pt"><a href="?infotype=学术">学术</a></td> 
+ <td align="center" style="font-size: 9pt"><a href=# onclick="document.fsearch1.search_type.value='fu';document.fsearch1.keyword.value='电子科学与技术学院';document.fsearch1.dayy.value='30#一个月';document.fsearch1.searchb1.click();">电子科学与技术学院</a></td> 
+ <td> 
+ <a target=_blank href="view.asp?id=345170" class=fontcolor3>·电子科学与技术学院2017年学术报告会之二十四-应用相干和超快X射线源“解码”量子材料</a></td> 
+ <td align="center"></td> 
+ <td align="center" style="font-size: 9pt">2017-8-31</td> 
+
+</tr> 
+  
+<tr bgcolor=#FFFFFF> 
+ <td align="center">100</td> 
+ <td align="center" style="font-size: 9pt"><a href="?infotype=学工">学工</a></td> 
+ <td align="center" style="font-size: 9pt"><a href=# onclick="document.fsearch1.search_type.value='fu';document.fsearch1.keyword.value='国际商学院';document.fsearch1.dayy.value='30#一个月';document.fsearch1.searchb1.click();">国际商学院</a></td> 
+ <td> 
+ <a target=_blank href="view.asp?id=345061" class=fontcolor3>·<font color=black>南特商学院关于招聘勤工助学学生通知</font></a></td> 
+ <td align="center"></td> 
+ <td align="center" style="font-size: 9pt">2017-8-31</td> 
+
+</tr> 
+  
+<tr > 
+ <td align="center">101</td> 
+ <td align="center" style="font-size: 9pt"><a href="?infotype=学工">学工</a></td> 
+ <td align="center" style="font-size: 9pt"><a href=# onclick="document.fsearch1.search_type.value='fu';document.fsearch1.keyword.value='国际商学院';document.fsearch1.dayy.value='30#一个月';document.fsearch1.searchb1.click();">国际商学院</a></td> 
+ <td> 
+ <a target=_blank href="view.asp?id=344974" class=fontcolor3>·<font color=black>南特商学院关于招聘“网管”勤工助学学生通知</font></a></td> 
+ <td align="center"></td> 
+ <td align="center" style="font-size: 9pt">2017-8-31</td> 
+
+</tr> 
+  
+<tr bgcolor=#FFFFFF> 
+ <td align="center">102</td> 
+ <td align="center" style="font-size: 9pt"><a href="?infotype=行政">行政</a></td> 
+ <td align="center" style="font-size: 9pt"><a href=# onclick="document.fsearch1.search_type.value='fu';document.fsearch1.keyword.value='党政办公室';document.fsearch1.dayy.value='30#一个月';document.fsearch1.searchb1.click();">党政办公室</a></td> 
+ <td> 
+ <a target=_blank href="view.asp?id=345166" class=fontcolor3>·<b><font color=red>关于召开2017年第六次基层党委（总支）书记例会的通知</font></b></a></td> 
+ <td align="center"></td> 
+ <td align="center" style="font-size: 9pt">2017-8-31</td> 
+
+</tr> 
+  
+<tr > 
+ <td align="center">103</td> 
+ <td align="center" style="font-size: 9pt"><a href="?infotype=学术">学术</a></td> 
+ <td align="center" style="font-size: 9pt"><a href=# onclick="document.fsearch1.search_type.value='fu';document.fsearch1.keyword.value='科学技术部';document.fsearch1.dayy.value='30#一个月';document.fsearch1.searchb1.click();">科学技术部</a></td> 
+ <td> 
+ <a target=_blank href="view.asp?id=345167" class=fontcolor3>·关于填报2017年深圳市项目经费预算的通知</a></td> 
+ <td align="center"><img border=0 src=../images/attach.gif></td> 
+ <td align="center" style="font-size: 9pt">2017-8-31</td> 
+
+</tr> 
+  
+<tr bgcolor=#FFFFFF> 
+ <td align="center">104</td> 
+ <td align="center" style="font-size: 9pt"><a href="?infotype=教务">教务</a></td> 
+ <td align="center" style="font-size: 9pt"><a href=# onclick="document.fsearch1.search_type.value='fu';document.fsearch1.keyword.value='教务部';document.fsearch1.dayy.value='30#一个月';document.fsearch1.searchb1.click();">教务部</a></td> 
+ <td> 
+ <a target=_blank href="view.asp?id=345168" class=fontcolor3>·关于9月4日全校正式上课的温馨提示</a></td> 
+ <td align="center"></td> 
+ <td align="center" style="font-size: 9pt">2017-8-31</td> 
+
+</tr> 
+  
+<tr > 
+ <td align="center">105</td> 
+ <td align="center" style="font-size: 9pt"><a href="?infotype=学术">学术</a></td> 
+ <td align="center" style="font-size: 9pt"><a href=# onclick="document.fsearch1.search_type.value='fu';document.fsearch1.keyword.value='数学与统计学院';document.fsearch1.dayy.value='30#一个月';document.fsearch1.searchb1.click();">数学与统计学院</a></td> 
+ <td> 
+ <a target=_blank href="view.asp?id=345165" class=fontcolor3>·学术讲座</a></td> 
+ <td align="center"></td> 
+ <td align="center" style="font-size: 9pt">2017-8-31</td> 
+
+</tr> 
+  
+<tr bgcolor=#FFFFFF> 
+ <td align="center">106</td> 
+ <td align="center" style="font-size: 9pt"><a href="?infotype=学术">学术</a></td> 
+ <td align="center" style="font-size: 9pt"><a href=# onclick="document.fsearch1.search_type.value='fu';document.fsearch1.keyword.value='管理学院';document.fsearch1.dayy.value='30#一个月';document.fsearch1.searchb1.click();">管理学院</a></td> 
+ <td> 
+ <a target=_blank href="view.asp?id=345164" class=fontcolor3>·管理学院第五期访问学者论坛顺利举行</a></td> 
+ <td align="center"></td> 
+ <td align="center" style="font-size: 9pt">2017-8-31</td> 
+
+</tr> 
+  
+<tr > 
+ <td align="center">107</td> 
+ <td align="center" style="font-size: 9pt"><a href="?infotype=学工">学工</a></td> 
+ <td align="center" style="font-size: 9pt"><a href=# onclick="document.fsearch1.search_type.value='fu';document.fsearch1.keyword.value='研究生院';document.fsearch1.dayy.value='30#一个月';document.fsearch1.searchb1.click();">研究生院</a></td> 
+ <td> 
+ <a target=_blank href="view.asp?id=345162" class=fontcolor3>·<b><font color=black>【招聘信息】国厚资产深圳总部实习生招聘</font></b></a></td> 
+ <td align="center"></td> 
+ <td align="center" style="font-size: 9pt">2017-8-31</td> 
+
+</tr> 
+  
+<tr bgcolor=#FFFFFF> 
+ <td align="center">108</td> 
+ <td align="center" style="font-size: 9pt"><a href="?infotype=教务">教务</a></td> 
+ <td align="center" style="font-size: 9pt"><a href=# onclick="document.fsearch1.search_type.value='fu';document.fsearch1.keyword.value='研究生院';document.fsearch1.dayy.value='30#一个月';document.fsearch1.searchb1.click();">研究生院</a></td> 
+ <td> 
+ <a target=_blank href="view.asp?id=345160" class=fontcolor3>·2017-2018第一学期学术型研究生选课指引</a></td> 
+ <td align="center"></td> 
+ <td align="center" style="font-size: 9pt">2017-8-31</td> 
+
+</tr> 
+  
+<tr > 
+ <td align="center">109</td> 
+ <td align="center" style="font-size: 9pt"><a href="?infotype=学工">学工</a></td> 
+ <td align="center" style="font-size: 9pt"><a href=# onclick="document.fsearch1.search_type.value='fu';document.fsearch1.keyword.value='学生部';document.fsearch1.dayy.value='30#一个月';document.fsearch1.searchb1.click();">学生部</a></td> 
+ <td> 
+ <a target=_blank href="view.asp?id=345161" class=fontcolor3>·关于提交2017-2018学年度生源地贷款回执的通知</a></td> 
+ <td align="center"></td> 
+ <td align="center" style="font-size: 9pt">2017-8-31</td> 
+
+</tr> 
+  
+<tr bgcolor=#FFFFFF> 
+ <td align="center">110</td> 
+ <td align="center" style="font-size: 9pt"><a href="?infotype=校园">校园</a></td> 
+ <td align="center" style="font-size: 9pt"><a href=# onclick="document.fsearch1.search_type.value='fu';document.fsearch1.keyword.value='后勤部';document.fsearch1.dayy.value='30#一个月';document.fsearch1.searchb1.click();">后勤部</a></td> 
+ <td> 
+ <a target=_blank href="view.asp?id=345157" class=fontcolor3>·茂名市人民政府机关事务管理局一行来我校调研交流节能工作</a></td> 
+ <td align="center"></td> 
+ <td align="center" style="font-size: 9pt">2017-8-31</td> 
+
+</tr> 
+  
+<tr > 
+ <td align="center">111</td> 
+ <td align="center" style="font-size: 9pt"><a href="?infotype=校园">校园</a></td> 
+ <td align="center" style="font-size: 9pt"><a href=# onclick="document.fsearch1.search_type.value='fu';document.fsearch1.keyword.value='校团委';document.fsearch1.dayy.value='30#一个月';document.fsearch1.searchb1.click();">校团委</a></td> 
+ <td> 
+ <a target=_blank href="view.asp?id=345155" class=fontcolor3>·<b>关于开展2017年“一学一做”专题考学的通知</b></a></td> 
+ <td align="center"><img border=0 src=../images/attach.gif></td> 
+ <td align="center" style="font-size: 9pt">2017-8-31</td> 
+
+</tr> 
+  
+<tr bgcolor=#FFFFFF> 
+ <td align="center">112</td> 
+ <td align="center" style="font-size: 9pt"><a href="?infotype=校园">校园</a></td> 
+ <td align="center" style="font-size: 9pt"><a href=# onclick="document.fsearch1.search_type.value='fu';document.fsearch1.keyword.value='师范学院';document.fsearch1.dayy.value='30#一个月';document.fsearch1.searchb1.click();">师范学院</a></td> 
+ <td> 
+ <a target=_blank href="view.asp?id=345154" class=fontcolor3>·深圳大学师范学院戏剧与影视学2017年暑假学校成功举办</a></td> 
+ <td align="center"></td> 
+ <td align="center" style="font-size: 9pt">2017-8-31</td> 
+
+</tr> 
+  
+<tr > 
+ <td align="center">113</td> 
+ <td align="center" style="font-size: 9pt"><a href="?infotype=行政">行政</a></td> 
+ <td align="center" style="font-size: 9pt"><a href=# onclick="document.fsearch1.search_type.value='fu';document.fsearch1.keyword.value='人力资源部';document.fsearch1.dayy.value='30#一个月';document.fsearch1.searchb1.click();">人力资源部</a></td> 
+ <td> 
+ <a target=_blank href="view.asp?id=345150" class=fontcolor3>·<b><font color=black>2017暑期岗前培训报销通知</font></b></a></td> 
+ <td align="center"><img border=0 src=../images/attach.gif></td> 
+ <td align="center" style="font-size: 9pt">2017-8-31</td> 
+
+</tr> 
+  
+<tr bgcolor=#FFFFFF> 
+ <td align="center">114</td> 
+ <td align="center" style="font-size: 9pt"><a href="?infotype=学工">学工</a></td> 
+ <td align="center" style="font-size: 9pt"><a href=# onclick="document.fsearch1.search_type.value='fu';document.fsearch1.keyword.value='学生部';document.fsearch1.dayy.value='30#一个月';document.fsearch1.searchb1.click();">学生部</a></td> 
+ <td> 
+ <a target=_blank href="view.asp?id=345146" class=fontcolor3>·<b><font color=black>关于招聘资助管理助理的启事</font></b></a></td> 
+ <td align="center"></td> 
+ <td align="center" style="font-size: 9pt">2017-8-31</td> 
+
+</tr> 
+  
+<tr > 
+ <td align="center">115</td> 
+ <td align="center" style="font-size: 9pt"><a href="?infotype=学术">学术</a></td> 
+ <td align="center" style="font-size: 9pt"><a href=# onclick="document.fsearch1.search_type.value='fu';document.fsearch1.keyword.value='信息工程学院';document.fsearch1.dayy.value='30#一个月';document.fsearch1.searchb1.click();">信息工程学院</a></td> 
+ <td> 
+ <a target=_blank href="view.asp?id=345026" class=fontcolor3>·学术讲座两场：Backscatter: A Green Communication Paradigm.../大规模多天线</a></td> 
+ <td align="center"></td> 
+ <td align="center" style="font-size: 9pt">2017-8-31</td> 
+
+</tr> 
+  
+<tr bgcolor=#FFFFFF> 
+ <td align="center">116</td> 
+ <td align="center" style="font-size: 9pt"><a href="?infotype=校园">校园</a></td> 
+ <td align="center" style="font-size: 9pt"><a href=# onclick="document.fsearch1.search_type.value='fu';document.fsearch1.keyword.value='学生事务服务中心';document.fsearch1.dayy.value='30#一个月';document.fsearch1.searchb1.click();">学生事务服务中心</a></td> 
+ <td> 
+ <a target=_blank href="view.asp?id=345065" class=fontcolor3>·<b>学生事务服务中心关于招聘本科生助理的通知</b></a></td> 
+ <td align="center"><img border=0 src=../images/attach.gif></td> 
+ <td align="center" style="font-size: 9pt">2017-8-31</td> 
+
+</tr> 
+  
+<tr > 
+ <td align="center">117</td> 
+ <td align="center" style="font-size: 9pt"><a href="?infotype=学工">学工</a></td> 
+ <td align="center" style="font-size: 9pt"><a href=# onclick="document.fsearch1.search_type.value='fu';document.fsearch1.keyword.value='计算机与软件学院';document.fsearch1.dayy.value='30#一个月';document.fsearch1.searchb1.click();">计算机与软件学院</a></td> 
+ <td> 
+ <a target=_blank href="view.asp?id=344818" class=fontcolor3>·计算机与软件学院招聘勤工俭学夜大生</a></td> 
+ <td align="center"></td> 
+ <td align="center" style="font-size: 9pt">2017-8-31</td> 
+
+</tr> 
+  
+<tr bgcolor=#FFFFFF> 
+ <td align="center">118</td> 
+ <td align="center" style="font-size: 9pt"><a href="?infotype=学术">学术</a></td> 
+ <td align="center" style="font-size: 9pt"><a href=# onclick="document.fsearch1.search_type.value='fu';document.fsearch1.keyword.value='数学与统计学院';document.fsearch1.dayy.value='30#一个月';document.fsearch1.searchb1.click();">数学与统计学院</a></td> 
+ <td> 
+ <a target=_blank href="view.asp?id=345140" class=fontcolor3>·学术报告十九：张量分解及其应用</a></td> 
+ <td align="center"></td> 
+ <td align="center" style="font-size: 9pt">2017-8-31</td> 
+
+</tr> 
+  
+<tr > 
+ <td align="center">119</td> 
+ <td align="center" style="font-size: 9pt"><a href="?infotype=教务">教务</a></td> 
+ <td align="center" style="font-size: 9pt"><a href=# onclick="document.fsearch1.search_type.value='fu';document.fsearch1.keyword.value='研究生院';document.fsearch1.dayy.value='30#一个月';document.fsearch1.searchb1.click();">研究生院</a></td> 
+ <td> 
+ <a target=_blank href="view.asp?id=345083" class=fontcolor3>·<b>关于提交2017年研招暑期学校活动总结的通知</b></a></td> 
+ <td align="center"><img border=0 src=../images/attach.gif></td> 
+ <td align="center" style="font-size: 9pt">2017-8-30</td> 
+
+</tr> 
+  
+<tr bgcolor=#FFFFFF> 
+ <td align="center">120</td> 
+ <td align="center" style="font-size: 9pt"><a href="?infotype=学术">学术</a></td> 
+ <td align="center" style="font-size: 9pt"><a href=# onclick="document.fsearch1.search_type.value='fu';document.fsearch1.keyword.value='管理学院';document.fsearch1.dayy.value='30#一个月';document.fsearch1.searchb1.click();">管理学院</a></td> 
+ <td> 
+ <a target=_blank href="view.asp?id=344720" class=fontcolor3>·喜讯：我校在2017“创新创业”全国管理决策模拟大赛总决赛中荣获全国总冠军</a></td> 
+ <td align="center"></td> 
+ <td align="center" style="font-size: 9pt">2017-8-30</td> 
+
+</tr> 
+  
+<tr > 
+ <td align="center">121</td> 
+ <td align="center" style="font-size: 9pt"><a href="?infotype=学术">学术</a></td> 
+ <td align="center" style="font-size: 9pt"><a href=# onclick="document.fsearch1.search_type.value='fu';document.fsearch1.keyword.value='体育部';document.fsearch1.dayy.value='30#一个月';document.fsearch1.searchb1.click();">体育部</a></td> 
+ <td> 
+ <a target=_blank href="view.asp?id=345067" class=fontcolor3>·学术讲座：从长安到雅典—中国古代丝绸之路体育文化的传播</a></td> 
+ <td align="center"></td> 
+ <td align="center" style="font-size: 9pt">2017-8-30</td> 
+
+</tr> 
+  
+<tr bgcolor=#FFFFFF> 
+ <td align="center">122</td> 
+ <td align="center" style="font-size: 9pt"><a href="?infotype=教务">教务</a></td> 
+ <td align="center" style="font-size: 9pt"><a href=# onclick="document.fsearch1.search_type.value='fu';document.fsearch1.keyword.value='教务部';document.fsearch1.dayy.value='30#一个月';document.fsearch1.searchb1.click();">教务部</a></td> 
+ <td> 
+ <a target=_blank href="view.asp?id=345064" class=fontcolor3>·2016-2017学年度第二学期缓考（补考）成绩录入工作通知</a></td> 
+ <td align="center"></td> 
+ <td align="center" style="font-size: 9pt">2017-8-30</td> 
+
+</tr> 
+  
+<tr > 
+ <td align="center">123</td> 
+ <td align="center" style="font-size: 9pt"><a href="?infotype=行政">行政</a></td> 
+ <td align="center" style="font-size: 9pt"><a href=# onclick="document.fsearch1.search_type.value='fu';document.fsearch1.keyword.value='国际交流与合作部';document.fsearch1.dayy.value='30#一个月';document.fsearch1.searchb1.click();">国际交流与合作部</a></td> 
+ <td> 
+ <a target=_blank href="view.asp?id=324349" class=fontcolor3>·<b><font color=black>有关外籍教师（含博士后）办理《来华工作许可》及《就业居留许可》的通知</font></b></a></td> 
+ <td align="center"><img border=0 src=../images/attach.gif></td> 
+ <td align="center" style="font-size: 9pt">2017-8-30</td> 
+
+</tr> 
+  
+<tr bgcolor=#FFFFFF> 
+ <td align="center">124</td> 
+ <td align="center" style="font-size: 9pt"><a href="?infotype=行政">行政</a></td> 
+ <td align="center" style="font-size: 9pt"><a href=# onclick="document.fsearch1.search_type.value='fu';document.fsearch1.keyword.value='国际交流与合作部';document.fsearch1.dayy.value='30#一个月';document.fsearch1.searchb1.click();">国际交流与合作部</a></td> 
+ <td> 
+ <a target=_blank href="view.asp?id=343552" class=fontcolor3>·<b><font color=black>因公出国（境）办理流程</font></b></a></td> 
+ <td align="center"><img border=0 src=../images/attach.gif></td> 
+ <td align="center" style="font-size: 9pt">2017-8-30</td> 
+
+</tr> 
+  
+<tr > 
+ <td align="center">125</td> 
+ <td align="center" style="font-size: 9pt"><a href="?infotype=行政">行政</a></td> 
+ <td align="center" style="font-size: 9pt"><a href=# onclick="document.fsearch1.search_type.value='fu';document.fsearch1.keyword.value='人力资源部';document.fsearch1.dayy.value='30#一个月';document.fsearch1.searchb1.click();">人力资源部</a></td> 
+ <td> 
+ <a target=_blank href="view.asp?id=345050" class=fontcolor3>·<b><font color=black>关于开展2016-2017年度考核、教师聘期（三年定期）考核及教职工续聘工作的通知</font></b></a></td> 
+ <td align="center"><img border=0 src=../images/attach.gif></td> 
+ <td align="center" style="font-size: 9pt">2017-8-30</td> 
+
+</tr> 
+  
+<tr bgcolor=#FFFFFF> 
+ <td align="center">126</td> 
+ <td align="center" style="font-size: 9pt"><a href="?infotype=学术">学术</a></td> 
+ <td align="center" style="font-size: 9pt"><a href=# onclick="document.fsearch1.search_type.value='fu';document.fsearch1.keyword.value='科学技术部';document.fsearch1.dayy.value='30#一个月';document.fsearch1.searchb1.click();">科学技术部</a></td> 
+ <td> 
+ <a target=_blank href="view.asp?id=345049" class=fontcolor3>·<b>国家自然科学基金委关于征集2018年度化学科学领域重大项目立项建议的通知</b></a></td> 
+ <td align="center"></td> 
+ <td align="center" style="font-size: 9pt">2017-8-30</td> 
+
+</tr> 
+  
+<tr > 
+ <td align="center">127</td> 
+ <td align="center" style="font-size: 9pt"><a href="?infotype=学工">学工</a></td> 
+ <td align="center" style="font-size: 9pt"><a href=# onclick="document.fsearch1.search_type.value='fu';document.fsearch1.keyword.value='党委研工部';document.fsearch1.dayy.value='30#一个月';document.fsearch1.searchb1.click();">党委研工部</a></td> 
+ <td> 
+ <a target=_blank href="view.asp?id=345014" class=fontcolor3>·<b>关于举办第七期研究生管理人员培训《大学生心理困扰诊断与面谈训练》工作坊的通知</b></a></td> 
+ <td align="center"></td> 
+ <td align="center" style="font-size: 9pt">2017-8-30</td> 
+
+</tr> 
+  
+<tr bgcolor=#FFFFFF> 
+ <td align="center">128</td> 
+ <td align="center" style="font-size: 9pt"><a href="?infotype=教务">教务</a></td> 
+ <td align="center" style="font-size: 9pt"><a href=# onclick="document.fsearch1.search_type.value='fu';document.fsearch1.keyword.value='机电与控制工程学院';document.fsearch1.dayy.value='30#一个月';document.fsearch1.searchb1.click();">机电与控制工程学院</a></td> 
+ <td> 
+ <a target=_blank href="view.asp?id=345007" class=fontcolor3>·<b>喜讯：深圳大学机电与控制工程学院获得第四届全国虚拟仪器大赛一等奖</b></a></td> 
+ <td align="center"></td> 
+ <td align="center" style="font-size: 9pt">2017-8-30</td> 
+
+</tr> 
+  
+<tr > 
+ <td align="center">129</td> 
+ <td align="center" style="font-size: 9pt"><a href="?infotype=学术">学术</a></td> 
+ <td align="center" style="font-size: 9pt"><a href=# onclick="document.fsearch1.search_type.value='fu';document.fsearch1.keyword.value='化学与环境工程学院';document.fsearch1.dayy.value='30#一个月';document.fsearch1.searchb1.click();">化学与环境工程学院</a></td> 
+ <td> 
+ <a target=_blank href="view.asp?id=344966" class=fontcolor3>·<b>学术讲座（二十）：Precious Metal Anticancer Complexes with New Mechan</b></a></td> 
+ <td align="center"></td> 
+ <td align="center" style="font-size: 9pt">2017-8-30</td> 
+
+</tr> 
+  
+<tr bgcolor=#FFFFFF> 
+ <td align="center">130</td> 
+ <td align="center" style="font-size: 9pt"><a href="?infotype=行政">行政</a></td> 
+ <td align="center" style="font-size: 9pt"><a href=# onclick="document.fsearch1.search_type.value='fu';document.fsearch1.keyword.value='马克思主义学院';document.fsearch1.dayy.value='30#一个月';document.fsearch1.searchb1.click();">马克思主义学院</a></td> 
+ <td> 
+ <a target=_blank href="view.asp?id=345046" class=fontcolor3>·马克思主义学院召开贯彻落实全省高校思想政治工作会议精神的专题会议</a></td> 
+ <td align="center"></td> 
+ <td align="center" style="font-size: 9pt">2017-8-30</td> 
+
+</tr> 
+  
+<tr > 
+ <td align="center">131</td> 
+ <td align="center" style="font-size: 9pt"><a href="?infotype=学术">学术</a></td> 
+ <td align="center" style="font-size: 9pt"><a href=# onclick="document.fsearch1.search_type.value='fu';document.fsearch1.keyword.value='科学技术部';document.fsearch1.dayy.value='30#一个月';document.fsearch1.searchb1.click();">科学技术部</a></td> 
+ <td> 
+ <a target=_blank href="view.asp?id=345044" class=fontcolor3>·<b>国家自然科学基金委化学科学部关于征集前沿导向重点项目/重点项目群立项建议的通知</b></a></td> 
+ <td align="center"></td> 
+ <td align="center" style="font-size: 9pt">2017-8-30</td> 
+
+</tr> 
+  
+<tr bgcolor=#FFFFFF> 
+ <td align="center">132</td> 
+ <td align="center" style="font-size: 9pt"><a href="?infotype=学术">学术</a></td> 
+ <td align="center" style="font-size: 9pt"><a href=# onclick="document.fsearch1.search_type.value='fu';document.fsearch1.keyword.value='物理与能源学院';document.fsearch1.dayy.value='30#一个月';document.fsearch1.searchb1.click();">物理与能源学院</a></td> 
+ <td> 
+ <a target=_blank href="view.asp?id=345042" class=fontcolor3>·物理与能源学院2017年学术报告（二十七）：硫化物基热电转换材料研究进展</a></td> 
+ <td align="center"></td> 
+ <td align="center" style="font-size: 9pt">2017-8-30</td> 
+
+</tr> 
+  
+<tr > 
+ <td align="center">133</td> 
+ <td align="center" style="font-size: 9pt"><a href="?infotype=学术">学术</a></td> 
+ <td align="center" style="font-size: 9pt"><a href=# onclick="document.fsearch1.search_type.value='fu';document.fsearch1.keyword.value='材料学院';document.fsearch1.dayy.value='30#一个月';document.fsearch1.searchb1.click();">材料学院</a></td> 
+ <td> 
+ <a target=_blank href="view.asp?id=345039" class=fontcolor3>·柔性可弯曲钙钛矿氧化物薄膜及其存储器件</a></td> 
+ <td align="center"></td> 
+ <td align="center" style="font-size: 9pt">2017-8-30</td> 
+
+</tr> 
+  
+<tr bgcolor=#FFFFFF> 
+ <td align="center">134</td> 
+ <td align="center" style="font-size: 9pt"><a href="?infotype=学术">学术</a></td> 
+ <td align="center" style="font-size: 9pt"><a href=# onclick="document.fsearch1.search_type.value='fu';document.fsearch1.keyword.value='生命与海洋科学学院';document.fsearch1.dayy.value='30#一个月';document.fsearch1.searchb1.click();">生命与海洋科学学院</a></td> 
+ <td> 
+ <a target=_blank href="view.asp?id=345024" class=fontcolor3>·学术讲座——蓝藻光系统II的组装与修复</a></td> 
+ <td align="center"></td> 
+ <td align="center" style="font-size: 9pt">2017-8-30</td> 
+
+</tr> 
+  
+<tr > 
+ <td align="center">135</td> 
+ <td align="center" style="font-size: 9pt"><a href="?infotype=行政">行政</a></td> 
+ <td align="center" style="font-size: 9pt"><a href=# onclick="document.fsearch1.search_type.value='fu';document.fsearch1.keyword.value='宣传部';document.fsearch1.dayy.value='30#一个月';document.fsearch1.searchb1.click();">宣传部</a></td> 
+ <td> 
+ <a target=_blank href="view.asp?id=345036" class=fontcolor3>·关于开展2017年师德建设主题教育月活动的通知</a></td> 
+ <td align="center"></td> 
+ <td align="center" style="font-size: 9pt">2017-8-30</td> 
+
+</tr> 
+  
+<tr bgcolor=#FFFFFF> 
+ <td align="center">136</td> 
+ <td align="center" style="font-size: 9pt"><a href="?infotype=行政">行政</a></td> 
+ <td align="center" style="font-size: 9pt"><a href=# onclick="document.fsearch1.search_type.value='fu';document.fsearch1.keyword.value='人力资源部';document.fsearch1.dayy.value='30#一个月';document.fsearch1.searchb1.click();">人力资源部</a></td> 
+ <td> 
+ <a target=_blank href="view.asp?id=345033" class=fontcolor3>·关于开展2017年珠江人才计划（博士后资助项目）申报工作的通知</a></td> 
+ <td align="center"><img border=0 src=../images/attach.gif></td> 
+ <td align="center" style="font-size: 9pt">2017-8-30</td> 
+
+</tr> 
+  
+<tr > 
+ <td align="center">137</td> 
+ <td align="center" style="font-size: 9pt"><a href="?infotype=校园">校园</a></td> 
+ <td align="center" style="font-size: 9pt"><a href=# onclick="document.fsearch1.search_type.value='fu';document.fsearch1.keyword.value='后勤部';document.fsearch1.dayy.value='30#一个月';document.fsearch1.searchb1.click();">后勤部</a></td> 
+ <td> 
+ <a target=_blank href="view.asp?id=345022" class=fontcolor3>·南校区餐厅三楼特色餐饮开业信息</a></td> 
+ <td align="center"></td> 
+ <td align="center" style="font-size: 9pt">2017-8-30</td> 
+
+</tr> 
+  
+<tr bgcolor=#FFFFFF> 
+ <td align="center">138</td> 
+ <td align="center" style="font-size: 9pt"><a href="?infotype=学工">学工</a></td> 
+ <td align="center" style="font-size: 9pt"><a href=# onclick="document.fsearch1.search_type.value='fu';document.fsearch1.keyword.value='计算机与软件学院';document.fsearch1.dayy.value='30#一个月';document.fsearch1.searchb1.click();">计算机与软件学院</a></td> 
+ <td> 
+ <a target=_blank href="view.asp?id=345016" class=fontcolor3>·深圳大学计算机与软件工程学院2017年“VR暑期课程”圆满结束</a></td> 
+ <td align="center"></td> 
+ <td align="center" style="font-size: 9pt">2017-8-30</td> 
+
+</tr> 
+  
+<tr > 
+ <td align="center">139</td> 
+ <td align="center" style="font-size: 9pt"><a href="?infotype=学术">学术</a></td> 
+ <td align="center" style="font-size: 9pt"><a href=# onclick="document.fsearch1.search_type.value='fu';document.fsearch1.keyword.value='体育部';document.fsearch1.dayy.value='30#一个月';document.fsearch1.searchb1.click();">体育部</a></td> 
+ <td> 
+ <a target=_blank href="view.asp?id=345013" class=fontcolor3>·学术讲座：古代丝绸之路岁时节庆体育文化研究</a></td> 
+ <td align="center"></td> 
+ <td align="center" style="font-size: 9pt">2017-8-30</td> 
+
+</tr> 
+  
+<tr bgcolor=#FFFFFF> 
+ <td align="center">140</td> 
+ <td align="center" style="font-size: 9pt"><a href="?infotype=行政">行政</a></td> 
+ <td align="center" style="font-size: 9pt"><a href=# onclick="document.fsearch1.search_type.value='fu';document.fsearch1.keyword.value='人力资源部';document.fsearch1.dayy.value='30#一个月';document.fsearch1.searchb1.click();">人力资源部</a></td> 
+ <td> 
+ <a target=_blank href="view.asp?id=345012" class=fontcolor3>·关于第八批优秀博士后入站奖励的公示</a></td> 
+ <td align="center"><img border=0 src=../images/attach.gif></td> 
+ <td align="center" style="font-size: 9pt">2017-8-30</td> 
+
+</tr> 
+  
+<tr > 
+ <td align="center">141</td> 
+ <td align="center" style="font-size: 9pt"><a href="?infotype=校园">校园</a></td> 
+ <td align="center" style="font-size: 9pt"><a href=# onclick="document.fsearch1.search_type.value='fu';document.fsearch1.keyword.value='高等研究院';document.fsearch1.dayy.value='30#一个月';document.fsearch1.searchb1.click();">高等研究院</a></td> 
+ <td> 
+ <a target=_blank href="view.asp?id=345011" class=fontcolor3>·<b>关于报名高等研究院“2017级理工创新实验班”的温馨提示</b></a></td> 
+ <td align="center"></td> 
+ <td align="center" style="font-size: 9pt">2017-8-30</td> 
+
+</tr> 
+  
+<tr bgcolor=#FFFFFF> 
+ <td align="center">142</td> 
+ <td align="center" style="font-size: 9pt"><a href="?infotype=学术">学术</a></td> 
+ <td align="center" style="font-size: 9pt"><a href=# onclick="document.fsearch1.search_type.value='fu';document.fsearch1.keyword.value='高等研究院';document.fsearch1.dayy.value='30#一个月';document.fsearch1.searchb1.click();">高等研究院</a></td> 
+ <td> 
+ <a target=_blank href="view.asp?id=344883" class=fontcolor3>·<b>高等研究院2017-2018学年名师讲堂（第二十二期）</b></a></td> 
+ <td align="center"><img border=0 src=../images/attach.gif></td> 
+ <td align="center" style="font-size: 9pt">2017-8-30</td> 
+
+</tr> 
+  
+<tr > 
+ <td align="center">143</td> 
+ <td align="center" style="font-size: 9pt"><a href="?infotype=教务">教务</a></td> 
+ <td align="center" style="font-size: 9pt"><a href=# onclick="document.fsearch1.search_type.value='fu';document.fsearch1.keyword.value='医学部(院)';document.fsearch1.dayy.value='30#一个月';document.fsearch1.searchb1.click();">医学部(院)</a></td> 
+ <td> 
+ <a target=_blank href="view.asp?id=345009" class=fontcolor3>·<b><font color=black>深圳大学医学部临床医学本科专业2017年校内招生公告</font></b></a></td> 
+ <td align="center"></td> 
+ <td align="center" style="font-size: 9pt">2017-8-30</td> 
+
+</tr> 
+  
+<tr bgcolor=#FFFFFF> 
+ <td align="center">144</td> 
+ <td align="center" style="font-size: 9pt"><a href="?infotype=教务">教务</a></td> 
+ <td align="center" style="font-size: 9pt"><a href=# onclick="document.fsearch1.search_type.value='fu';document.fsearch1.keyword.value='教务部';document.fsearch1.dayy.value='30#一个月';document.fsearch1.searchb1.click();">教务部</a></td> 
+ <td> 
+ <a target=_blank href="view.asp?id=345001" class=fontcolor3>·<b><font color=black>关于二〇一七年秋季学期学生教材发放的通知</font></b></a></td> 
+ <td align="center"><img border=0 src=../images/attach.gif></td> 
+ <td align="center" style="font-size: 9pt">2017-8-30</td> 
+
+</tr> 
+  
+<tr > 
+ <td align="center">145</td> 
+ <td align="center" style="font-size: 9pt"><a href="?infotype=学术">学术</a></td> 
+ <td align="center" style="font-size: 9pt"><a href=# onclick="document.fsearch1.search_type.value='fu';document.fsearch1.keyword.value='科学技术部';document.fsearch1.dayy.value='30#一个月';document.fsearch1.searchb1.click();">科学技术部</a></td> 
+ <td> 
+ <a target=_blank href="view.asp?id=345000" class=fontcolor3>·我校近期高水平论文成果</a></td> 
+ <td align="center"></td> 
+ <td align="center" style="font-size: 9pt">2017-8-30</td> 
+
+</tr> 
+  
+<tr bgcolor=#FFFFFF> 
+ <td align="center">146</td> 
+ <td align="center" style="font-size: 9pt"><a href="?infotype=学术">学术</a></td> 
+ <td align="center" style="font-size: 9pt"><a href=# onclick="document.fsearch1.search_type.value='fu';document.fsearch1.keyword.value='科学技术部';document.fsearch1.dayy.value='30#一个月';document.fsearch1.searchb1.click();">科学技术部</a></td> 
+ <td> 
+ <a target=_blank href="view.asp?id=344999" class=fontcolor3>·我校附属三院吴松教授获国家重点研发计划项目资助</a></td> 
+ <td align="center"></td> 
+ <td align="center" style="font-size: 9pt">2017-8-30</td> 
+
+</tr> 
+  
+<tr > 
+ <td align="center">147</td> 
+ <td align="center" style="font-size: 9pt"><a href="?infotype=行政">行政</a></td> 
+ <td align="center" style="font-size: 9pt"><a href=# onclick="document.fsearch1.search_type.value='fu';document.fsearch1.keyword.value='国际交流与合作部';document.fsearch1.dayy.value='30#一个月';document.fsearch1.searchb1.click();">国际交流与合作部</a></td> 
+ <td> 
+ <a target=_blank href="view.asp?id=344106" class=fontcolor3>·<b>关于选派2018年春季赴日本交换留学生的通知</b></a></td> 
+ <td align="center"><img border=0 src=../images/attach.gif></td> 
+ <td align="center" style="font-size: 9pt">2017-8-30</td> 
+
+</tr> 
+  
+<tr bgcolor=#FFFFFF> 
+ <td align="center">148</td> 
+ <td align="center" style="font-size: 9pt"><a href="?infotype=行政">行政</a></td> 
+ <td align="center" style="font-size: 9pt"><a href=# onclick="document.fsearch1.search_type.value='fu';document.fsearch1.keyword.value='国际交流与合作部';document.fsearch1.dayy.value='30#一个月';document.fsearch1.searchb1.click();">国际交流与合作部</a></td> 
+ <td> 
+ <a target=_blank href="view.asp?id=342505" class=fontcolor3>·<font color=black>关于申报2018年春季赴波兰交换留学生（留基委奖学金项目）的通知</font></a></td> 
+ <td align="center"></td> 
+ <td align="center" style="font-size: 9pt">2017-8-30</td> 
+
+</tr> 
+  
+<tr > 
+ <td align="center">149</td> 
+ <td align="center" style="font-size: 9pt"><a href="?infotype=行政">行政</a></td> 
+ <td align="center" style="font-size: 9pt"><a href=# onclick="document.fsearch1.search_type.value='fu';document.fsearch1.keyword.value='国际交流与合作部';document.fsearch1.dayy.value='30#一个月';document.fsearch1.searchb1.click();">国际交流与合作部</a></td> 
+ <td> 
+ <a target=_blank href="view.asp?id=342508" class=fontcolor3>·<font color=black>美国田纳西大学留学奖学金项目(2018春季)申请</font></a></td> 
+ <td align="center"><img border=0 src=../images/attach.gif></td> 
+ <td align="center" style="font-size: 9pt">2017-8-30</td> 
+
+</tr> 
+  
+<tr bgcolor=#FFFFFF> 
+ <td align="center">150</td> 
+ <td align="center" style="font-size: 9pt"><a href="?infotype=校园">校园</a></td> 
+ <td align="center" style="font-size: 9pt"><a href=# onclick="document.fsearch1.search_type.value='fu';document.fsearch1.keyword.value='饮食服务中心';document.fsearch1.dayy.value='30#一个月';document.fsearch1.searchb1.click();">饮食服务中心</a></td> 
+ <td> 
+ <a target=_blank href="view.asp?id=344997" class=fontcolor3>·关于新西南餐厅、荔山餐厅、南区一楼餐厅停止供餐的通知</a></td> 
+ <td align="center"></td> 
+ <td align="center" style="font-size: 9pt">2017-8-30</td> 
+
+</tr> 
+  
+<tr > 
+ <td align="center">151</td> 
+ <td align="center" style="font-size: 9pt"><a href="?infotype=校园">校园</a></td> 
+ <td align="center" style="font-size: 9pt"><a href=# onclick="document.fsearch1.search_type.value='fu';document.fsearch1.keyword.value='校工会';document.fsearch1.dayy.value='30#一个月';document.fsearch1.searchb1.click();">校工会</a></td> 
+ <td> 
+ <a target=_blank href="view.asp?id=343786" class=fontcolor3>·关于举办“最美的时代  醉美的镜头”深圳市教育系统摄影比赛的通知</a></td> 
+ <td align="center"><img border=0 src=../images/attach.gif></td> 
+ <td align="center" style="font-size: 9pt">2017-8-30</td> 
+
+</tr> 
+  
+<tr bgcolor=#FFFFFF> 
+ <td align="center">152</td> 
+ <td align="center" style="font-size: 9pt"><a href="?infotype=行政">行政</a></td> 
+ <td align="center" style="font-size: 9pt"><a href=# onclick="document.fsearch1.search_type.value='fu';document.fsearch1.keyword.value='国际交流与合作部';document.fsearch1.dayy.value='30#一个月';document.fsearch1.searchb1.click();">国际交流与合作部</a></td> 
+ <td> 
+ <a target=_blank href="view.asp?id=344412" class=fontcolor3>·<b>关于申请2016-2017年度深圳大学外语考试奖学金的通知</b></a></td> 
+ <td align="center"></td> 
+ <td align="center" style="font-size: 9pt">2017-8-30</td> 
+
+</tr> 
+  
+<tr > 
+ <td align="center">153</td> 
+ <td align="center" style="font-size: 9pt"><a href="?infotype=学工">学工</a></td> 
+ <td align="center" style="font-size: 9pt"><a href=# onclick="document.fsearch1.search_type.value='fu';document.fsearch1.keyword.value='党委研工部';document.fsearch1.dayy.value='30#一个月';document.fsearch1.searchb1.click();">党委研工部</a></td> 
+ <td> 
+ <a target=_blank href="view.asp?id=344992" class=fontcolor3>·<b>关于2017年7月份、8月份研究生兼任“三助”一辅工作用工报表合并上报的通知</b></a></td> 
+ <td align="center"></td> 
+ <td align="center" style="font-size: 9pt">2017-8-30</td> 
+
+</tr> 
+  
+<tr bgcolor=#FFFFFF> 
+ <td align="center">154</td> 
+ <td align="center" style="font-size: 9pt"><a href="?infotype=校园">校园</a></td> 
+ <td align="center" style="font-size: 9pt"><a href=# onclick="document.fsearch1.search_type.value='fu';document.fsearch1.keyword.value='国际交流与合作部';document.fsearch1.dayy.value='30#一个月';document.fsearch1.searchb1.click();">国际交流与合作部</a></td> 
+ <td> 
+ <a target=_blank href="view.asp?id=344989" class=fontcolor3>·关于启动2018年“黄廷方&#8226;法学奖学金”项目评选的通知</a></td> 
+ <td align="center"></td> 
+ <td align="center" style="font-size: 9pt">2017-8-30</td> 
+
+</tr> 
+  
+<tr > 
+ <td align="center">155</td> 
+ <td align="center" style="font-size: 9pt"><a href="?infotype=校园">校园</a></td> 
+ <td align="center" style="font-size: 9pt"><a href=# onclick="document.fsearch1.search_type.value='fu';document.fsearch1.keyword.value='计划财务部';document.fsearch1.dayy.value='30#一个月';document.fsearch1.searchb1.click();">计划财务部</a></td> 
+ <td> 
+ <a target=_blank href="view.asp?id=344990" class=fontcolor3>·招聘启事</a></td> 
+ <td align="center"></td> 
+ <td align="center" style="font-size: 9pt">2017-8-30</td> 
+
+</tr> 
+  
+<tr bgcolor=#FFFFFF> 
+ <td align="center">156</td> 
+ <td align="center" style="font-size: 9pt"><a href="?infotype=教务">教务</a></td> 
+ <td align="center" style="font-size: 9pt"><a href=# onclick="document.fsearch1.search_type.value='fu';document.fsearch1.keyword.value='研究生院';document.fsearch1.dayy.value='30#一个月';document.fsearch1.searchb1.click();">研究生院</a></td> 
+ <td> 
+ <a target=_blank href="view.asp?id=344988" class=fontcolor3>·<b><font color=black>关于开展研究生教务系统培训的通知</font></b></a></td> 
+ <td align="center"></td> 
+ <td align="center" style="font-size: 9pt">2017-8-30</td> 
+
+</tr> 
+  
+<tr > 
+ <td align="center">157</td> 
+ <td align="center" style="font-size: 9pt"><a href="?infotype=教务">教务</a></td> 
+ <td align="center" style="font-size: 9pt"><a href=# onclick="document.fsearch1.search_type.value='fu';document.fsearch1.keyword.value='招生办公室';document.fsearch1.dayy.value='30#一个月';document.fsearch1.searchb1.click();">招生办公室</a></td> 
+ <td> 
+ <a target=_blank href="view.asp?id=344981" class=fontcolor3>·<b>关于开展第七期“名师进中学”活动的通知（重发）</b></a></td> 
+ <td align="center"></td> 
+ <td align="center" style="font-size: 9pt">2017-8-30</td> 
+
+</tr> 
+  
+<tr bgcolor=#FFFFFF> 
+ <td align="center">158</td> 
+ <td align="center" style="font-size: 9pt"><a href="?infotype=教务">教务</a></td> 
+ <td align="center" style="font-size: 9pt"><a href=# onclick="document.fsearch1.search_type.value='fu';document.fsearch1.keyword.value='研究生院';document.fsearch1.dayy.value='30#一个月';document.fsearch1.searchb1.click();">研究生院</a></td> 
+ <td> 
+ <a target=_blank href="view.asp?id=344232" class=fontcolor3>·<b>关于做好2017-2018年度第一学期研究生注册工作的通知</b></a></td> 
+ <td align="center"></td> 
+ <td align="center" style="font-size: 9pt">2017-8-30</td> 
+
+</tr> 
+  
+<tr > 
+ <td align="center">159</td> 
+ <td align="center" style="font-size: 9pt"><a href="?infotype=学工">学工</a></td> 
+ <td align="center" style="font-size: 9pt"><a href=# onclick="document.fsearch1.search_type.value='fu';document.fsearch1.keyword.value='信息中心';document.fsearch1.dayy.value='30#一个月';document.fsearch1.searchb1.click();">信息中心</a></td> 
+ <td> 
+ <a target=_blank href="view.asp?id=321493" class=fontcolor3>·<font color=red>信息中心教学楼D506机房招聘勤工俭学学生</font></a></td> 
+ <td align="center"></td> 
+ <td align="center" style="font-size: 9pt">2017-8-30</td> 
+
+</tr> 
+  
+<tr bgcolor=#FFFFFF> 
+ <td align="center">160</td> 
+ <td align="center" style="font-size: 9pt"><a href="?infotype=学术">学术</a></td> 
+ <td align="center" style="font-size: 9pt"><a href=# onclick="document.fsearch1.search_type.value='fu';document.fsearch1.keyword.value='科学技术部';document.fsearch1.dayy.value='30#一个月';document.fsearch1.searchb1.click();">科学技术部</a></td> 
+ <td> 
+ <a target=_blank href="view.asp?id=344823" class=fontcolor3>·<b>关于填写2017年度国家自然科学基金项目计划书的通知</b></a></td> 
+ <td align="center"><img border=0 src=../images/attach.gif></td> 
+ <td align="center" style="font-size: 9pt">2017-8-30</td> 
+
+</tr> 
+  
+<tr > 
+ <td align="center">161</td> 
+ <td align="center" style="font-size: 9pt"><a href="?infotype=学术">学术</a></td> 
+ <td align="center" style="font-size: 9pt"><a href=# onclick="document.fsearch1.search_type.value='fu';document.fsearch1.keyword.value='社会科学部';document.fsearch1.dayy.value='30#一个月';document.fsearch1.searchb1.click();">社会科学部</a></td> 
+ <td> 
+ <a target=_blank href="view.asp?id=344781" class=fontcolor3>·中国法学会2017年度部级法学研究课题申报公告</a></td> 
+ <td align="center"><img border=0 src=../images/attach.gif></td> 
+ <td align="center" style="font-size: 9pt">2017-8-30</td> 
+
+</tr> 
+  
+<tr bgcolor=#FFFFFF> 
+ <td align="center">162</td> 
+ <td align="center" style="font-size: 9pt"><a href="?infotype=校园">校园</a></td> 
+ <td align="center" style="font-size: 9pt"><a href=# onclick="document.fsearch1.search_type.value='fu';document.fsearch1.keyword.value='中航物业';document.fsearch1.dayy.value='30#一个月';document.fsearch1.searchb1.click();">中航物业</a></td> 
+ <td> 
+ <a target=_blank href="view.asp?id=344979" class=fontcolor3>·<b><font color=black>关于办公楼南座停电通知</font></b></a></td> 
+ <td align="center"></td> 
+ <td align="center" style="font-size: 9pt">2017-8-29</td> 
+
+</tr> 
+  
+<tr > 
+ <td align="center">163</td> 
+ <td align="center" style="font-size: 9pt"><a href="?infotype=校园">校园</a></td> 
+ <td align="center" style="font-size: 9pt"><a href=# onclick="document.fsearch1.search_type.value='fu';document.fsearch1.keyword.value='图书馆';document.fsearch1.dayy.value='30#一个月';document.fsearch1.searchb1.click();">图书馆</a></td> 
+ <td> 
+ <a target=_blank href="view.asp?id=344978" class=fontcolor3>·关于北馆一楼学习空间阅览桌桌面执行“每日清理”办法的通知</a></td> 
+ <td align="center"></td> 
+ <td align="center" style="font-size: 9pt">2017-8-29</td> 
+
+</tr> 
+  
+<tr bgcolor=#FFFFFF> 
+ <td align="center">164</td> 
+ <td align="center" style="font-size: 9pt"><a href="?infotype=学术">学术</a></td> 
+ <td align="center" style="font-size: 9pt"><a href=# onclick="document.fsearch1.search_type.value='fu';document.fsearch1.keyword.value='土木工程学院';document.fsearch1.dayy.value='30#一个月';document.fsearch1.searchb1.click();">土木工程学院</a></td> 
+ <td> 
+ <a target=_blank href="view.asp?id=344977" class=fontcolor3>·华东交通大学袁方老师学术报告</a></td> 
+ <td align="center"></td> 
+ <td align="center" style="font-size: 9pt">2017-8-29</td> 
+
+</tr> 
+  
+<tr > 
+ <td align="center">165</td> 
+ <td align="center" style="font-size: 9pt"><a href="?infotype=教务">教务</a></td> 
+ <td align="center" style="font-size: 9pt"><a href=# onclick="document.fsearch1.search_type.value='fu';document.fsearch1.keyword.value='教务部';document.fsearch1.dayy.value='30#一个月';document.fsearch1.searchb1.click();">教务部</a></td> 
+ <td> 
+ <a target=_blank href="view.asp?id=344975" class=fontcolor3>·<b><font color=black>我校第八届广东省“高等学校教学名师奖”获得者王晓钧教授获省教育厅隆重表彰</font></b></a></td> 
+ <td align="center"></td> 
+ <td align="center" style="font-size: 9pt">2017-8-29</td> 
+
+</tr> 
+  
+<tr bgcolor=#FFFFFF> 
+ <td align="center">166</td> 
+ <td align="center" style="font-size: 9pt"><a href="?infotype=学术">学术</a></td> 
+ <td align="center" style="font-size: 9pt"><a href=# onclick="document.fsearch1.search_type.value='fu';document.fsearch1.keyword.value='管理学院';document.fsearch1.dayy.value='30#一个月';document.fsearch1.searchb1.click();">管理学院</a></td> 
+ <td> 
+ <a target=_blank href="view.asp?id=344972" class=fontcolor3>·2017年度我院喜获13项国家自然科学基金项目</a></td> 
+ <td align="center"></td> 
+ <td align="center" style="font-size: 9pt">2017-8-29</td> 
+
+</tr> 
+  
+</table> 
+</td> 
+ </tr> 
+ 
+  <tr> 
+<td height=20></td> 
+ </tr>
+</table> 
+
+</td>
+</tr>
+</table>
+</td>
+</tr>
+<tr>
+<td class="tbbottom tbcolor5" align="center" valign="top"><br><a href="/szu.asp">首页</a>
+｜
+<a href="http://www.szu.edu.cn/index/sdxw.htm">深大新闻</a>
+｜
+<a href="/board/guide.asp">公文通</a>
+｜
+<a href="http://210.39.3.155:9090/goLogin.do">OA系统</a>
+｜
+<a href="http://www.szu.edu.cn/yxjg/xyxb.htm">院系设置</a>
+｜
+<a href="http://www.szu.edu.cn/yxjg/znbm.htm">职能部门</a>
+｜
+<a href="/view.asp?id=12">教师事务</a>
+｜
+<a href="/view.asp?id=13">学生事务</a>
+｜
+<a href="/tv">荔园文化</a>
+｜
+<a href="/nc">网上服务</a>
+<br>　总机：2653-6114　校内报警：2653-7119　心理咨询：2695-8879　中航物业：2673-2006<br>　教工区网络：后海校区2653-7109 西丽校区86930513
+<br>　学生区网络：电信86310108 移动18476328678（短号678678）
+<br><a href="http://www.miibeian.gov.cn" class=fontcolor5 target=_blank>粤ICP备11018045号-7</a>　版权所有&copy;信息中心</td>
+</tr>
+</table>
+
+</body>
+
+</html>
